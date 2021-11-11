@@ -1,27 +1,24 @@
 #include <iostream>
 #include "vertex.cpp"
-#include <iostream>
-#include <jsoncpp/json/value.h>
-#include <jsoncpp/json/json.h>
 #include <fstream>
 #include <string>
+#include "json/single_include/nlohmann/json.hpp"
 
 using namespace std;
+using json = nlohmann::json;
 
-void jsonTest()
+json getData()
 {
     // Fstream package gets file in pointer variable
-    ifstream file("./dataset/cities.json")
-        Json::Value jsonData;
-    Json::Reader reader;
-
-    // Using reader we are parsing the JSON
-    reader.parse(file, jsonData);
-
-    std::cout << "Test: " << jsonData;
+    ifstream file("./dataset/cities.json");
+    json cities = json::parse(file);
+    return cities
 }
+
 int main()
 {
     Vertex test("NY", 10, 5);
     test.get_data();
+    getData();
+    return 0;
 }

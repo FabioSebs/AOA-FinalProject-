@@ -3,7 +3,7 @@
 #include <map>
 #include "classes.hpp"
 
-Graph::Graph(list<Vertex> new_vertices, map<Vertex, list<Vertex>> new_edges, int new_size = 0) : vertices(new_vertices), edges(new_edges), size(new_size){};
+Graph::Graph(list<Vertex> new_vertices, map<Vertex, list<Vertex>> new_edges) : vertices(new_vertices), edges(new_edges){};
 
 void Graph::add_vertex(Vertex &vertex)
 {
@@ -16,8 +16,7 @@ void Graph::add_vertex(Vertex &vertex)
         vertices.push_back(&vertex);
         add_edges(vertices[vertices.size() - 2], &vertex);
     }
-    size++;
-}
+};
 
 void Graph::add_edges(Vertex &vertex1, Vertex &vertex2)
 {

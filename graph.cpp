@@ -1,60 +1,73 @@
 #include <iostream>
-#include <list>
+#include <vector>
 #include <map>
+#include <fstream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include "classes.hpp"
+#include "json/single_include/nlohmann/json.hpp"
 
-Graph::Graph(list<Vertex> new_vertices, map<Vertex, list<Vertex>> new_edges) : vertices(new_vertices), edges(new_edges){};
+using json = nlohmann::json;
 
-void Graph::add_vertex(Vertex &vertex)
+//Utility Function
+json getData()
 {
-    if (vertices.size() == 0)
+    // Fstream package gets file in pointer variable
+    ifstream file("./dataset/cities.json");
+    json cities = json::parse(file);
+    return cities;
+};
+
+//Graph Constructor
+Graph::Graph(vector<Vertex> new_vertices, map<Vertex, vector<Vertex>> new_edges) : vertices(new_vertices), edges(new_edges){};
+
+// Adding Vertex
+void Graph::add_vertex(Vertex vertex)
+{
+    vertices.push_back(vertex);
+};
+
+//Adding Edges
+void Graph::add_edges(Vertex vertex1, Vertex vertex2)
+{
+    //Checks if Vertex has no Edges
+    if (edges[vertex1].size() == 0)
     {
-        vertices.push_back(&vertex);
+        //Create Vertex List that are the edges to &vertex1
+        vector<Vertex> vertexlist = {vertex2};
+        edges.insert({vertex1, vertexlist});
     }
     else
     {
-        vertices.push_back(&vertex);
-        add_edges(vertices[vertices.size() - 2], &vertex);
+        //Vertex already has Edges so append to Vertex List
+        edges[vertex1].push_back(vertex2);
     }
 };
 
-void Graph::add_edges(Vertex &vertex1, Vertex &vertex2)
+//Prints Adjacency List
+void Graph::adjacency_list()
 {
-    if (edges[&vertex1].size() == 0)
+    for (int i = 0; i < vertices.size() - 1; i++)
     {
-        list<Vertex> edgelist = {&vertex2};
-        edges.insert({&vertex1, edgelist});
-    }
-    else
-    {
-        edges[&vertex1].push_back(&vertex2);
-    }
-}
+        cout << "City: " << vertices[i] << endl;
 
-Graph Graph::populate(Graph &graph, int vertices)
-{
-}
-
-/*
-#include <iostream>
-#include "classes.hpp"
-
-Vertex::Vertex(string new_data, int new_cost, int new_huer) : data(new_data), cost(new_cost), huer(new_huer){};
-
-void Vertex::get_data()
-{
-    std::cout << data << " " << cost << " " << huer;
+        for (int j = 0; j < edges[vertices[i]].size() - 1; j++)
+        {
+            cout << "Connected to: " << edges[vertices[i]][j].get_data() << endl;
+        };
+        cout << "-----------------------------------------------------";
+    };
 };
 
-
-class Graph
+//Populates the Graph
+void Graph::populate(int vertices)
 {
-private:
-    list<Vertex> vertices;
-    map<Vertex, list<Vertex>> edges;
-
-public:
-    Graph(list<Vertex> new_vertices, map<Vertex, list<Vertex>> new_edges);
-    void populate();
-}
-*/
+    json cities = getData();
+    for (int i = 1; i < vertices; i++)
+    {
+        srand(time(0));
+        Vertex vertex(cities[rand() % 500]["name"], 0, 0, false);
+        add_vertex(vertex);
+    };
+};

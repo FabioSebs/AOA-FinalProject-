@@ -1,9 +1,13 @@
+// Include Guards
+#ifndef CLASSES_H
+#define CLASSES_H
+
 #include <iostream>
-#include <list>
+#include <vector>
 #include <map>
 
 using namespace std;
-
+//Vertex Class (data, cost, hueristic, visited)
 class Vertex
 {
 private:
@@ -17,15 +21,19 @@ public:
     void get_data();
 };
 
+//Graph Class (vertices, edges)
 class Graph
 {
 private:
-    list<Vertex> vertices;
-    map<Vertex, list<Vertex>> edges;
+    vector<Vertex> vertices;
+    map<Vertex, vector<Vertex>> edges;
 
 public:
-    Graph(list<Vertex> new_vertices, map<Vertex, list<Vertex>> new_edges);
-    void add_vertex(Vertex &vertex);
-    void add_edges(Vertex &vertex1, Vertex &vertex2);
-    Graph populate(Graph &graph, int vertices);
+    Graph(vector<Vertex> new_vertices, map<Vertex, vector<Vertex>> new_edges);
+    void add_vertex(Vertex vertex);
+    void add_edges(Vertex vertex1, Vertex vertex2);
+    void adjacency_list();
+    void populate(int vertices);
 };
+
+#endif

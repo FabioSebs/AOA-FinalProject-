@@ -23,6 +23,6 @@ Our final project will choose the cheapest path to travel from one destination t
 - [JSON Library](https://github.com/nlohmann/json)
 - [Colly](https://github.com/gocolly/colly)
 
-## Code :lightning:
+## Code :zap:
 
 ---

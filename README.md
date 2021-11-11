@@ -14,15 +14,15 @@ Our final project will choose the cheapest path to travel from one destination t
 
 > A* Search is an algorithm that is used widely for path searching and graph traversing. A* is termed an "informed" search because it uses hueristics to have a sense of knowledge knowing it is going in the right direction. Hueristics can be calculated using the Euclydian distance from the vertex to the desired destination.
 
-## Technologies and Libraries Used :technologist:
-
 ---
+
+## Technologies and Libraries Used :technologist:
 
 - C++
 - Go
 - [JSON Library](https://github.com/nlohmann/json)
 - [Colly](https://github.com/gocolly/colly)
 
-## Code :zap:
-
 ---
+
+## Code :zap:

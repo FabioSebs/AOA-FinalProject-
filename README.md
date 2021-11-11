@@ -8,11 +8,11 @@ Our final project will choose the cheapest path to travel from one destination t
 
 ### Djikstra Algorithm :dash:
 
-    Djikstra is an algorithm for finding the shortest path between vertices in a graph. Djikstra tracks the cost of every vertex from the root vertex and chooses the path with the least cost and unvisited vertices. Djikstra is implemented using a min-priority queue or can be also be implemented with an array given the right conditionals.
+> Djikstra is an algorithm for finding the shortest path between vertices in a graph. Djikstra tracks the cost of every vertex from the root vertex and chooses the path with the least cost and unvisited vertices. Djikstra is implemented using a min-priority queue or can be also be implemented with an array given the right conditionals.
 
 ### A\* Search Algorithm :brain:
 
-    A* Search is an algorithm that is used widely for path searching and graph traversing. A* is termed an "informed" search because it uses hueristics to have a sense of knowledge knowing it is going in the right direction. Hueristics can be calculated using the Euclydian distance from the vertex to the desired destination.
+> A* Search is an algorithm that is used widely for path searching and graph traversing. A* is termed an "informed" search because it uses hueristics to have a sense of knowledge knowing it is going in the right direction. Hueristics can be calculated using the Euclydian distance from the vertex to the desired destination.
 
 ## Technologies and Libraries Used :technologist:
 

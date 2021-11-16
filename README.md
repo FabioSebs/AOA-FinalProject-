@@ -187,7 +187,7 @@ class DjikstraGraph(Graph):
 
 Making a DjikstraGraph that extends the base Graph Class is needed because it adds the _Djikstra Vertex_ object into its _Vertices_ list. The implementation is slightly different to an A\* approach.
 
-## First we get the data from the _readJson()_ function and then check if the graph is empty. If it is we put the root vertex in the graph and with a weight of 0. Next since our function _populateGraphDjikstra()_ has a parameter named _amount_ we use that as our range for our foor loop and with each iteration we make a new Vertex object and add it to the graph
+First we get the data from the _readJson()_ function and then check if the graph is empty. If it is we put the root vertex in the graph and with a weight of 0. Next since our function _populateGraphDjikstra()_ has a parameter named _amount_ we use that as our range for our foor loop and with each iteration we make a new Vertex object and add it to the graph
 
 ### **AStarGraph Class**
 

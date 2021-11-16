@@ -72,14 +72,21 @@ class DjikstraGraph(Graph):
     def populateGraphDjikstra(self, amount):
         data = self.readJson()
 
-        if not len(self.vertices):
-            root = vertex.DjikstraVertex(data[0]["name"], 0)
-            self.addVertex(root)
-
         for i in range(1, amount+1):
             city = vertex.DjikstraVertex(
-                data[i]["name"], self.calculateDistance(data[0]["position"]) - self.calculateDistance(data[i]["position"]))
+                data[i]["name"], self.calculateDistance(data[i]["position"]))
             self.addVertex(city)
+
+    def mapify(self):
+        startNode = input("What is your destination?")
+        for v in self.vertices:
+            for i in range(len(self.edges[v])):
+                self.edges[v][i].weight = abs(
+                    self.edges[v][i].weight - v.weight)
+            if startNode.upper() == v.data.upper():
+                v.weight = 0
+
+        self.printGraph()
 
 
 class AStarGraph(Graph):
@@ -89,14 +96,36 @@ class AStarGraph(Graph):
     def populateGraphAStar(self, amount):
         data = self.readJson()
 
-        if not len(self.vertices):
-            root = vertex.AStarVertex(data[0]["name"], 0, 0)
-            self.addVertex(root)
-
         for i in range(amount+1):
-            city = vertex.AStarVertex(data[i]["name"], self.calculateDistance(
-                data[0]["position"]) - self.calculateDistance(data[i]["position"]), 0)
+            city = vertex.AStarVertex(
+                data[i]["name"], self.calculateDistance(data[i]["position"]), 0)
             self.addVertex(city)
+
+    def mapify(self):
+        startNode = input("What city are you in?\n")
+        goalNode = input("Where do you want to go?\n")
+        goalNodeIndex = 0
+        # Getting the Start Node Index
+        for idx, val in enumerate(self.vertices):
+            if goalNode.upper == val.data.upper():
+                goalNodeIndex = idx
+
+        # Changing the Weights and Hueristics
+        for v in self.vertices:
+            for i in range(len(self.edges[v])):
+                self.edges[v][i].weight = abs(
+                    self.edges[v][i].weight - v.weight)
+
+                self.edges[v][i].hueristic = self.distanceFrom(
+                    self.vertices[goalNodeIndex], self.edges[v][i])
+
+            if startNode.upper() == v.data.upper():
+                v.weight = 0
+
+        self.printGraph()
+
+    def distanceFrom(self, vertex1, vertex2):
+        return abs(vertex1.weight - vertex2.weight)
 
     def printGraph(self):
         x = PrettyTable()

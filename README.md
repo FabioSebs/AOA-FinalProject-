@@ -175,19 +175,28 @@ class DjikstraGraph(Graph):
     def populateGraphDjikstra(self, amount):
         data = self.readJson()
 
-        if not len(self.vertices):
-            root = vertex.DjikstraVertex(data[0]["name"], 0)
-            self.addVertex(root)
-
         for i in range(1, amount+1):
             city = vertex.DjikstraVertex(
-                data[i]["name"], self.calculateDistance(data[0]["position"]) - self.calculateDistance(data[i]["position"]))
+                data[i]["name"], self.calculateDistance(data[i]["position"]))
             self.addVertex(city)
+
+    def mapify(self):
+        startNode = input("What is your destination?")
+        for v in self.vertices:
+            for i in range(len(self.edges[v])):
+                self.edges[v][i].weight = abs(
+                    self.edges[v][i].weight - v.weight)
+            if startNode.upper() == v.data.upper():
+                v.weight = 0
+
+        self.printGraph()
 ```
 
 Making a DjikstraGraph that extends the base Graph Class is needed because it adds the _Djikstra Vertex_ object into its _Vertices_ list. The implementation is slightly different to an A\* approach.
 
 First we get the data from the _readJson()_ function and then check if the graph is empty. If it is we put the root vertex in the graph and with a weight of 0. Next since our function _populateGraphDjikstra()_ has a parameter named _amount_ we use that as our range for our foor loop and with each iteration we make a new Vertex object and add it to the graph
+
+For _mapify()_ we ask for a start node and then we iterate through our _vertices_ list. Within the for loop we calculate the distance of cities that are connected to each other. We run a conditional for the start node to make the distance 0 since it is the beginning destination.
 
 ### **AStarGraph Class**
 
@@ -199,14 +208,37 @@ class AStarGraph(Graph):
     def populateGraphAStar(self, amount):
         data = self.readJson()
 
-        if not len(self.vertices):
-            root = vertex.AStarVertex(data[0]["name"], 0, 0)
-            self.addVertex(root)
-
         for i in range(amount+1):
-            city = vertex.AStarVertex(data[i]["name"], self.calculateDistance(
-                data[0]["position"]) - self.calculateDistance(data[i]["position"]), 0)
+            city = vertex.AStarVertex(
+                data[i]["name"], self.calculateDistance(data[i]["position"]), 0)
             self.addVertex(city)
+
+    def mapify(self):
+        startNode = input("What city are you in?\n")
+        goalNode = input("Where do you want to go?\n")
+        gaolNodeIndex = 0
+
+        # Getting the Start Node Index
+        for idx, val in enumerate(self.vertices):
+            if goalNode.upper == val.data.upper():
+                goalNodeIndex = idx
+
+        # Changing the Weights and Hueristics
+        for v in self.vertices:
+            for i in range(len(self.edges[v])):
+                self.edges[v][i].weight = abs(
+                    self.edges[v][i].weight - v.weight)
+
+                self.edges[v][i].hueristic = self.distanceFrom(
+                    self.vertices[goalNodeIndex], self.edges[v][i])
+
+            if startNode.upper() == v.data.upper():
+                v.weight = 0
+
+        self.printGraph()
+
+    def distanceFrom(self, vertex1, vertex2):
+        return abs(vertex1.weight - vertex2.weight)
 
     def printGraph(self):
         x = PrettyTable()
@@ -219,6 +251,9 @@ class AStarGraph(Graph):
             print(x)
         except:
             print("Graph Vertices is not consisted of Cities from JSON file.")
+
 ```
 
 This AStarGraph is similar to the Djikstra Graph just the only difference is that we account for hueristics which has yet to be implemented. We also overload the _printGraph()_ function so that the column has the right name and includes Hueristic.
+
+This mapify function is similar however it accounts for a goal node since we want to have correct hueristics. We make a utility function _distanceFrom()_ to help us in the calculation of the hueristics.

@@ -107,7 +107,7 @@ class AStarGraph(Graph):
         goalNodeIndex = 0
         # Getting the Start Node Index
         for idx, val in enumerate(self.vertices):
-            if goalNode.upper == val.data.upper():
+            if goalNode.upper() == val.data.upper():
                 goalNodeIndex = idx
 
         # Changing the Weights and Hueristics

@@ -1,0 +1,49 @@
+.grid {
+  margin: 0;
+  padding-top: 30px;
+}
+
+.grid .row {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.grid .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 30%;
+}
+
+.grid .buttons button {
+  padding: 2px 10px;
+}
+
+.grid .buttons .dest {
+  background-color: green;
+  color: white;
+}
+
+.grid .buttons .djikstra {
+  background-color: brown;
+  color: white;
+}
+
+.grid .buttons .astar {
+  background-color: aqua;
+  color: black;
+}
+
+.choosing {
+  cursor: crosshair;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=visualizer.css.map */

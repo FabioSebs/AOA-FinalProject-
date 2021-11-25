@@ -1,0 +1,32 @@
+.node {
+  width: 20px;
+  height: 20px;
+  outline: 1px solid gray;
+  display: inline-block;
+}
+
+.node:hover {
+  outline: 2px solid red;
+  background-color: #ecec72;
+}
+
+.startnode {
+  background: radial-gradient(yellow, green);
+}
+
+.goalnode {
+  background: radial-gradient(yellow, red);
+}
+
+.visited {
+  background-color: blue;
+}
+
+.choosing {
+  cursor: crosshair;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=node.css.map */

@@ -41,6 +41,8 @@ class Graph():
         except:
             print("Graph Vertices is not consisted of Cities from JSON file.")
 
+    # UTILITY FUNCTION
+
     def readJson(self):
         with open("./dataset/cities.json") as f:
             data = json.load(f)
@@ -83,6 +85,9 @@ class DjikstraGraph(Graph):
             for i in range(len(self.edges[v])):
                 self.edges[v][i].weight = abs(
                     self.edges[v][i].weight - v.weight)
+                if self.edges[v][i].data.upper() == startNode.upper():
+                    self.edges[v][i].weight = 0
+
             if startNode.upper() == v.data.upper():
                 v.weight = 0
 
@@ -119,8 +124,13 @@ class AStarGraph(Graph):
                 self.edges[v][i].hueristic = self.distanceFrom(
                     self.vertices[goalNodeIndex], self.edges[v][i])
 
+                if startNode.upper() == self.edges[v][i].data.upper():
+                    self.edges[v][i].weight = 0
+                    self.edges[v][i].hueristic = 0
+
             if startNode.upper() == v.data.upper():
                 v.weight = 0
+                v.hueristic = 0
 
         self.printGraph()
 

@@ -18,7 +18,7 @@ const Visualizer = () => {
     // let [start, setStart] = useState(false);
 
 
-    //////////////////////////***ALGORITHM***///////////////////////////////
+    //////////////////////////***DJIKSTRA ALGORITHM***///////////////////////////////
     const Djikstra = (grid, start = null, goal = null, neighbors = null) => {
         let startNode;
         let goalNode;
@@ -137,6 +137,129 @@ const Visualizer = () => {
         }////////
     }
 
+
+    //////////////////////////***ASTAR ALGORITHM***///////////////////////////////
+    const AStar = (grid, startNode = null, goalNode = null, animationTime = 0) => {
+
+        //FIRST CALL OF FUNCTION WHEN GOAL AND START IS NULL
+        if (startNode === null) {
+
+            //FILTERING THE START AND GOAL NODE BY THEIR DISTANCE
+            let importantNodes = [];
+            grid.forEach(row => {
+                row.forEach(node => {
+                    if (node.distance === 0) {
+                        importantNodes.push(node)
+                    }
+                })
+            });
+
+            //DECONSTRUCTING THE START NODE AND GAOL NODE
+            try {
+                [startNode, goalNode] = [...importantNodes]
+            } catch (error) {
+                console.log("NO DESTINATION NODE SET")
+            }
+
+            //SETS HEURISTICS RESPECTIVE TO THE GOAL NODE
+            setHueristics(grid)
+            calculateHueristics(goalNode, grid)
+
+            //GET THE NEIGHBORS
+            let right = startNode.right ? grid[startNode.row][startNode.right] : null;
+            let left = startNode.left ? grid[startNode.row][startNode.left] : null
+            let up = startNode.up ? grid[startNode.up][startNode.col] : null
+            let down = startNode.down ? grid[startNode.down][startNode.col] : null
+            // console.log(right, left, up, down) //WORKS!
+            let neighbors = [right, up, left, down]
+
+            //FILTERING NULL VALUES
+            neighbors = neighbors.filter(node => node)
+
+            //PRUNING THE NEIGHBORS THAT ARENT MOVING CLOSER TO GOAL NODE
+            let closestNode = Infinity;
+            neighbors.forEach(node => {
+                if (node.hueristic < closestNode) {
+                    closestNode = node.hueristic
+                }
+            })
+
+            neighbors.forEach(node => {
+                closestNode = closestNode === node.hueristic ? node : closestNode
+            })
+
+
+            if (closestNode.isGoal) {
+                return true
+            } else {
+                setTimeout(() => {
+                    visited(closestNode, startNode, goalNode)
+                }, animationTime * 500)
+            }
+
+            return AStar(grid, closestNode, goalNode, ++animationTime)
+        }
+        else {
+            //GET THE NEIGHBORS OF NEW START
+            let right = startNode.right ? grid[startNode.row][startNode.right] : null;
+            let left = startNode.left ? grid[startNode.row][startNode.left] : null
+            let up = startNode.up ? grid[startNode.up][startNode.col] : null
+            let down = startNode.down ? grid[startNode.down][startNode.col] : null
+            // console.log(right, left, up, down) //WORKS!
+            let neighbors = [right, up, left, down]
+
+            //FILTERING NULL VALUES
+            neighbors = neighbors.filter(node => node)
+
+            neighbors.forEach(node => {
+                if (node.isGoal) {
+                    return true
+                }
+            })
+
+
+            //PRUNING THE NEIGHBORS THAT ARENT MOVING CLOSER TO GOAL NODE
+            let closestNode = Infinity;
+            neighbors.forEach(node => {
+                if (node.hueristic < closestNode) {
+                    closestNode = node.hueristic
+                }
+            })
+
+            neighbors.forEach(node => {
+                closestNode = closestNode === node.hueristic ? node : closestNode
+            })
+
+            if (closestNode.isGoal) {
+                return true
+            } else {
+                setTimeout(() => {
+                    visited(closestNode, startNode, goalNode)
+                }, animationTime * 100)
+
+            }
+            AStar(grid, closestNode, goalNode, ++animationTime)
+        }
+
+    }
+
+    const setHueristics = (grid) => {
+        let iterator = 0
+        grid.forEach(row => {
+            row.forEach(node => {
+                node.hueristic = iterator++
+            })
+        })
+    }
+
+    const calculateHueristics = (goalNode, grid) => {
+        grid.forEach(row => {
+            row.forEach(node => {
+                node.hueristic = Math.abs(node.hueristic - goalNode.hueristic)
+            })
+        })
+    }
+
     /////////////////////////***CLASS***///////////////////////////////////
     class createNode {
         constructor(row, col) {
@@ -186,15 +309,25 @@ const Visualizer = () => {
 
     // CHANGE COLORS OF VISITED SQUARES
 
-    const visited = (node, start = null) => {
+    const visited = (node, start = null, goal = null) => {
         let row = node.row
         let col = node.col
         let startRow = start.row
         let startCol = start.col
 
-
         let visitIdx = getIdx(row, col)
         let startIdx = getIdx(startRow, startCol)
+
+        if (goal) {
+            let goalRow = goal.row
+            let goalCol = goal.col
+
+            let goalIdx = getIdx(goalRow, goalCol)
+
+            if (visitIdx === goalIdx) {
+                return true
+            }
+        }
 
         if (visitIdx === startIdx) {
             return true
@@ -262,7 +395,7 @@ const Visualizer = () => {
             <div className="buttons">
                 <button className="dest" onClick={(button) => chooseMode(Grid)}>Choose Destination</button>
                 <button className="djikstra" onClick={() => Djikstra(nodeGrid)}>Djikstra Algorithm</button>
-                <button className="astar">A* Algorithm</button>
+                <button className="astar" onClick={() => AStar(nodeGrid)}>A* Algorithm</button>
             </div>
 
         </div>

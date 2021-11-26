@@ -1,6 +1,7 @@
 .grid {
   margin: 0;
   padding-top: 30px;
+  z-index: 3;
 }
 
 .grid .row {
@@ -45,5 +46,13 @@
 
 .hidden {
   display: none;
+}
+
+.logo {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  top: 60px;
+  z-index: 1;
 }
 /*# sourceMappingURL=visualizer.css.map */

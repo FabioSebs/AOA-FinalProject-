@@ -3,9 +3,11 @@
     height: 20px;
     outline: 1px solid gray;
     display: inline-block;
+    z-index: 3;
     &:hover{
         outline: 2px solid red;
         background-color: rgb(236, 236, 114);
+        z-index: 3;
     }
 }
 
@@ -17,7 +19,7 @@
 }
 
 .visited {
-    background-color: blue;
+    animation: changeColor 6s ease-in-out;
 }
 
 .choosing {
@@ -27,3 +29,21 @@
 .hidden {
     display: none;
 }
+
+@keyframes changeColor {
+    from {
+        background-color: white;
+    }
+
+    30% {
+        background-color: chartreuse;
+    }
+
+    75% {
+        background-color: rgb(255, 0, 0);
+     }
+
+    to {
+        background-color: rgb(0, 174, 255);
+    }
+} 

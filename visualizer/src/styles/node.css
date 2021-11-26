@@ -3,11 +3,13 @@
   height: 20px;
   outline: 1px solid gray;
   display: inline-block;
+  z-index: 3;
 }
 
 .node:hover {
   outline: 2px solid red;
   background-color: #ecec72;
+  z-index: 3;
 }
 
 .startnode {
@@ -19,7 +21,8 @@
 }
 
 .visited {
-  background-color: blue;
+  -webkit-animation: changeColor 6s ease-in-out;
+          animation: changeColor 6s ease-in-out;
 }
 
 .choosing {
@@ -28,5 +31,35 @@
 
 .hidden {
   display: none;
+}
+
+@-webkit-keyframes changeColor {
+  from {
+    background-color: white;
+  }
+  30% {
+    background-color: chartreuse;
+  }
+  75% {
+    background-color: red;
+  }
+  to {
+    background-color: #00aeff;
+  }
+}
+
+@keyframes changeColor {
+  from {
+    background-color: white;
+  }
+  30% {
+    background-color: chartreuse;
+  }
+  75% {
+    background-color: red;
+  }
+  to {
+    background-color: #00aeff;
+  }
 }
 /*# sourceMappingURL=node.css.map */

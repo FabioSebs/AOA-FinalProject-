@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Node from './Node'
 import '../styles/visualizer.css'
-
+import Logo from '../assets/binus.png'
 ///////////////////////////***CONSTANTS***//////////////////////////////
 const STARTNODEROW = 10
 const STARTNODECOL = 3
@@ -303,6 +303,8 @@ const Visualizer = () => {
     // CHANGES CLASS OF GRID TO CHOOSING MODE TO CHOOSE DESTINATION
     const chooseMode = (el) => {
         const button = document.querySelector('.dest')
+        const logo = document.querySelector('.logo')
+        logo.style.display = "none"
         el.current.classList.toggle('choosing')
         button.disabled = true // PREVENTS MULTIPLE DESTINATIONS
     }
@@ -333,7 +335,7 @@ const Visualizer = () => {
             return true
         }
         else {
-            document.getElementById(`${visitIdx}`).style.background = 'blue'
+            document.getElementById(`${visitIdx}`).style.animation = "changeColor 3s ease-in-out forwards"
         }
 
     }
@@ -393,6 +395,7 @@ const Visualizer = () => {
             })}
             {/* BUTTONS */}
             <div className="buttons">
+                <img className="logo" src={Logo} unselectable="off" />
                 <button className="dest" onClick={(button) => chooseMode(Grid)}>Choose Destination</button>
                 <button className="djikstra" onClick={() => Djikstra(nodeGrid)}>Djikstra Algorithm</button>
                 <button className="astar" onClick={() => AStar(nodeGrid)}>A* Algorithm</button>

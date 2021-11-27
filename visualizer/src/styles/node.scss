@@ -1,7 +1,7 @@
 .node {
     width: 20px;
     height: 20px;
-    outline: 1px solid gray;
+    outline: 1px solid rgb(0, 0, 0);
     display: inline-block;
     z-index: 3;
     &:hover{
@@ -33,17 +33,21 @@
 @keyframes changeColor {
     from {
         background-color: white;
+        outline: 1px solid rgb(0, 0, 0);
     }
 
     30% {
         background-color: chartreuse;
+        outline: 3px solid rgb(216, 37, 37);
     }
 
     75% {
         background-color: rgb(255, 0, 0);
+        outline: 3px solid rgb(0, 81, 255);
      }
 
     to {
         background-color: rgb(0, 174, 255);
+        outline: 3px solid rgb(64, 255, 46);
     }
 } 

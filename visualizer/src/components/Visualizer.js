@@ -369,6 +369,8 @@ const Visualizer = () => {
     // RENDER METHOD
     return (
         <div className="grid" ref={Grid}>
+            {/* TITLE */}
+            <h2 className="title"> Djikstra VS A* Visualizer </h2>
             {/* LOOPING THROUGH THE GRIDS ROWS */}
             {nodes.map((row, idx) => {
                 //MAKING NEW GRID BUT WITH NODES IN IT, ALMOST LIKE A COPY \\ RETURNING ROW DIVS THAT ARE GONNA HOLD OUR NODE CELLS

@@ -2,6 +2,7 @@
   margin: 0;
   padding-top: 30px;
   z-index: 3;
+  text-align: center;
 }
 
 .grid .row {
@@ -16,13 +17,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 30%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: auto;
 }
 
 .grid .buttons button {
-  padding: 2px 10px;
+  position: relative;
+  margin-top: 3em;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 2px solid white;
 }
 
 .grid .buttons .dest {
@@ -30,14 +36,29 @@
   color: white;
 }
 
+.grid .buttons .dest:hover {
+  border: 2px solid red;
+  background-color: #04ce04;
+}
+
 .grid .buttons .djikstra {
   background-color: brown;
   color: white;
 }
 
+.grid .buttons .djikstra:hover {
+  border: 2px solid green;
+  background-color: #ff5d5d;
+}
+
 .grid .buttons .astar {
   background-color: aqua;
   color: black;
+}
+
+.grid .buttons .astar:hover {
+  border: 2px solid salmon;
+  background-color: #dcfffc;
 }
 
 .choosing {
@@ -52,7 +73,13 @@
   position: absolute;
   height: 400px;
   width: 400px;
-  top: 60px;
+  top: 240px;
   z-index: 1;
+}
+
+.title {
+  font-size: 4em;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=visualizer.css.map */

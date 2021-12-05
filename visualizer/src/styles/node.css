@@ -1,0 +1,73 @@
+.node {
+  width: 20px;
+  height: 20px;
+  outline: 1px solid black;
+  display: inline-block;
+  z-index: 3;
+}
+
+.node:hover {
+  outline: 2px solid red;
+  background-color: #ecec72;
+  z-index: 3;
+}
+
+.startnode {
+  background: radial-gradient(yellow, green);
+}
+
+.goalnode {
+  background: radial-gradient(yellow, red);
+}
+
+.visited {
+  -webkit-animation: changeColor 6s ease-in-out;
+          animation: changeColor 6s ease-in-out;
+}
+
+.choosing {
+  cursor: crosshair;
+}
+
+.hidden {
+  display: none;
+}
+
+@-webkit-keyframes changeColor {
+  from {
+    background-color: white;
+    outline: 1px solid black;
+  }
+  30% {
+    background-color: chartreuse;
+    outline: 3px solid #d82525;
+  }
+  75% {
+    background-color: red;
+    outline: 3px solid #0051ff;
+  }
+  to {
+    background-color: #00aeff;
+    outline: 3px solid #40ff2e;
+  }
+}
+
+@keyframes changeColor {
+  from {
+    background-color: white;
+    outline: 1px solid black;
+  }
+  30% {
+    background-color: chartreuse;
+    outline: 3px solid #d82525;
+  }
+  75% {
+    background-color: red;
+    outline: 3px solid #0051ff;
+  }
+  to {
+    background-color: #00aeff;
+    outline: 3px solid #40ff2e;
+  }
+}
+/*# sourceMappingURL=node.css.map */

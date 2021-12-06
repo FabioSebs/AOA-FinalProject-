@@ -54,5 +54,5 @@ def DjikstraSearch(map, startNode, goalNode):
     return visited
 
 
-def AStarSearch(map, startNode, goalNode):
-    pass
+
+

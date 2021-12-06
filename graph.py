@@ -66,6 +66,12 @@ class Graph():
 
         return (x+y)
 
+    def getDest():
+        pass
+
+    def getGoal():
+        pass
+
 
 class DjikstraGraph(Graph):
     def __init__(self):
@@ -80,18 +86,23 @@ class DjikstraGraph(Graph):
             self.addVertex(city)
 
     def mapify(self):
-        startNode = input("What is your destination?")
+        startNode = input("What is your location?\n")
+        goalNode = input("What is your destination?\n")
         for v in self.vertices:
             for i in range(len(self.edges[v])):
                 self.edges[v][i].weight = abs(
                     self.edges[v][i].weight - v.weight)
-                if self.edges[v][i].data.upper() == startNode.upper():
-                    self.edges[v][i].weight = 0
 
-            if startNode.upper() == v.data.upper():
-                v.weight = 0
+                for x in self.edges[v]:
+                    if x.data.upper() == goalNode.upper():
+                        x.weight = 0
+                        x.changeWeight(0)
+
+            if goalNode.upper() == v.data.upper():
+                v.changeWeight(0)
 
         self.printGraph()
+        return (startNode.upper(), goalNode.upper())
 
 
 class AStarGraph(Graph):
@@ -133,6 +144,7 @@ class AStarGraph(Graph):
                 v.hueristic = 0
 
         self.printGraph()
+        return (startNode.upper(), goalNode.upper())
 
     def distanceFrom(self, vertex1, vertex2):
         return abs(vertex1.weight - vertex2.weight)

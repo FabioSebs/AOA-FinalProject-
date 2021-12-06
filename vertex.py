@@ -14,6 +14,10 @@ class DjikstraVertex(Vertex):
     def getInfo(self):
         return (self.data, self.weight)
 
+    def changeWeight(self, weight):
+        self.weight = weight
+
+
 # Weighted and Hueristic Vertex
 
 

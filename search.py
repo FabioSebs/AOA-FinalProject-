@@ -14,22 +14,26 @@ def DjikstraSearch(map, startNode, goalNode):
         if k.data.upper() == startNode:
             k.weight = float('inf')
             for x in v:
-                pq.put(x.weight, x)
+                pq.put(x.weight)
                 weights = np.append(weights, [x, x.weight])
 
     #  Traversing until Goal
     while (weight := pq.get()) != 0:
-        print(weight)
+
         map.printGraph()
         visited.append(weight)
 
         # Getting Least Distance City
         leastDistance = None
 
+        # Going into Neighbors
         for idx, val in enumerate(weights):
+            # Comparing Neighbors to Visted to set Weight to Inf
             for visit in visited:
                 if visit == val:
+                    # Have to go into Map to Change Weights
                     for _, val2 in map.edges.items():
+                        # Going through every Value which is a list of DjikstraObjects to check for Visited Nodes
                         for z in val2:
                             if z.weight == visit:
                                 z.weight = float('inf')
@@ -42,6 +46,7 @@ def DjikstraSearch(map, startNode, goalNode):
         for k, v in map.edges.items():
             # key has to match the neighbor with least weight - lets get neighbor with least weight
             if k == leastDistance:
+                print([y.getInfo() for y in v])
                 for x in v:
                     pq.put(x.weight, x)
                     weights = np.append(weights, [x, x.weight])

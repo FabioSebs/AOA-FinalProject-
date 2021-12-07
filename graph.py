@@ -1,6 +1,7 @@
 from os import read
 import vertex
 import json
+import random
 import numpy as np
 from prettytable import PrettyTable
 
@@ -56,8 +57,16 @@ class Graph():
     # https://lweb.cfa.harvard.edu/space_geodesy/ATLAS/cme_convert.html
     # Note: All Indonesian Cities will have South Latitude and East Longitude
     def calculateDistance(self, position):
-        Latdegrees, Latminutes = int(position[1:3]), int(position[3:5])
-        Londegrees, Lonminutes = int(position[5:7]), int(position[7:9])
+        try:
+            Latdegrees, Latminutes = int(position[1:3]), int(position[3:5])
+            Londegrees, Lonminutes = int(position[5:7]), int(position[7:9])
+        
+        except(Exception):
+            pass
+
+        finally:
+            Latdegrees, Latminutes = random.randint(0,99), random.randint(0,99)
+            Londegrees, Lonminutes = random.randint(0,99), random.randint(0,99)
 
         Latdegrees *= 60
         Londegrees *= 60
@@ -85,9 +94,7 @@ class DjikstraGraph(Graph):
                 data[i]["name"], self.calculateDistance(data[i]["position"]))
             self.addVertex(city)
 
-    def mapify(self):
-        startNode = input("What is your location?\n")
-        goalNode = input("What is your destination?\n")
+    def mapify(self,startNode, goalNode):
         for v in self.vertices:
             for i in range(len(self.edges[v])):
                 self.edges[v][i].weight = abs(
@@ -117,9 +124,7 @@ class AStarGraph(Graph):
                 data[i]["name"], self.calculateDistance(data[i]["position"]), 0)
             self.addVertex(city)
 
-    def mapify(self):
-        startNode = input("What city are you in?\n")
-        goalNode = input("Where do you want to go?\n")
+    def mapify(self, startNode, goalNode):
         goalNodeIndex = 0
         # Getting the Start Node Index
         for idx, val in enumerate(self.vertices):

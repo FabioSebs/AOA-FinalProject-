@@ -50,9 +50,10 @@ def DjikstraSearch(map, startNode, goalNode):
                 for x in v:
                     pq.put(x.weight, x)
                     weights = np.append(weights, [x, x.weight])
+    distance = sum(visited) 
+    return {"distance": distance}
 
-    return visited
 
-
-
+def AStar(map, startNode, goalNode):
+    return "TBD"
 

@@ -17,8 +17,7 @@ async def getDjikstra(nodes: Travel):
     djik = graph.DjikstraGraph()
     djik.populateGraphDjikstra(500)
     start, goal = djik.mapify(nodes.start, nodes.goal)
-    {distance} = search.DjikstraSearch(djik, start, goal)
-    return sum(distance)
+    return (search.DjikstraSearch(djik, start, goal))
 
 @app.post("/astar/")
 async def getAStar(nodes: Travel):

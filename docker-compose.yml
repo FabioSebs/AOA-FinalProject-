@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  api:
+    container_name: pythonapi
+    
+    build: ./
+
+    ports:
+      - "5000:5000"
+    
+    networks:
+      - connection
+
+  frontend:
+    container_name: frontendAlgo
+
+    build:
+      context: visualizer/
+
+    ports:
+      - "3000:3000"
+
+    networks:
+      - connection
+
+networks:
+  connection:
+    driver: bridge

@@ -14,11 +14,7 @@ const DjikstraView = () => {
 			})
 			console.log(response)
 			console.log(response.data)
-			let distance = response.data.reduce((accumulator, iterator) => {
-				return (accumulator += parseInt(iterator))
-			})
-			console.log(distance)
-			setResults(distance)
+			setResults(response.data.distance)
 			console.log("Search Complete!")
 		}
 		catch (err) {

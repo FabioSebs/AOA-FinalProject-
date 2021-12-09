@@ -1,0 +1,1 @@
+.djikstraContainer{display:flex;flex-direction:column;width:30%;gap:10px}.djikstraContainer input:hover{background-color:bisque;cursor:pointer}.djikstraContainer button{background-color:green;color:#fff;padding:.35em}.djikstraContainer button:hover{background-color:#00db00}

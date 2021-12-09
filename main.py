@@ -8,16 +8,20 @@ import search
 
 app = FastAPI()
 
+
 class Travel(BaseModel):
     start: str
-    goal:str
+    goal: str
+
 
 @app.post("/djikstra/")
 async def getDjikstra(nodes: Travel):
     djik = graph.DjikstraGraph()
     djik.populateGraphDjikstra(500)
     start, goal = djik.mapify(nodes.start, nodes.goal)
+    print(start, goal)
     return (search.DjikstraSearch(djik, start, goal))
+
 
 @app.post("/astar/")
 async def getAStar(nodes: Travel):
@@ -27,7 +31,7 @@ async def getAStar(nodes: Travel):
     res = search.AStar(astar, start, goal)
     return res
 
-origins = [ "http://localhost:3000", "http://localhost" ]
+origins = ["http://localhost:3000", "http://localhost"]
 
 app.add_middleware(
     CORSMiddleware,

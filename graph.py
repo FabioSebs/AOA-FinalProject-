@@ -58,15 +58,17 @@ class Graph():
     # Note: All Indonesian Cities will have South Latitude and East Longitude
     def calculateDistance(self, position):
         try:
-            Latdegrees, Latminutes = int(position[1:3]), int(position[3:5])
-            Londegrees, Lonminutes = int(position[5:7]), int(position[7:9])
-        
-        except(Exception):
-            pass
+            Latdegrees, Latminutes = int(position[0:2]), int(position[2:4])
+            Londegrees, Lonminutes = int(position[4:6]), int(position[6:])
+
+        except Exception:
+            print("Position needs to be removed with Go \n")
+            # Latdegrees, Latminutes = int(position[0:2]), int(position[2:4])
+            # Londegrees, Lonminutes = int(position[4:6]), int(position[6:8])
 
         finally:
-            Latdegrees, Latminutes = random.randint(0,99), random.randint(0,99)
-            Londegrees, Lonminutes = random.randint(0,99), random.randint(0,99)
+            Latdegrees, Latminutes = int(position[0:2]), int(position[2:4])
+            Londegrees, Lonminutes = int(position[4:6]), 0
 
         Latdegrees *= 60
         Londegrees *= 60
@@ -91,10 +93,10 @@ class DjikstraGraph(Graph):
 
         for i in range(1, amount+1):
             city = vertex.DjikstraVertex(
-                data[i]["name"], self.calculateDistance(data[i]["position"]))
+                data[i]["name"], self.calculateDistance(str(data[i]["position"])))
             self.addVertex(city)
 
-    def mapify(self,startNode, goalNode):
+    def mapify(self, startNode, goalNode):
         for v in self.vertices:
             for i in range(len(self.edges[v])):
                 self.edges[v][i].weight = abs(
@@ -108,7 +110,7 @@ class DjikstraGraph(Graph):
             if goalNode.upper() == v.data.upper():
                 v.changeWeight(0)
 
-        self.printGraph()
+        # self.printGraph()
         return (startNode.upper(), goalNode.upper())
 
 

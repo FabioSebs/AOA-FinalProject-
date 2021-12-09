@@ -1,0 +1,21 @@
+.djikstraContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+
+    input {
+        &:hover {
+            background-color: bisque;
+            cursor: pointer;
+        }
+    }
+    button {
+        background-color: green;
+        color: white;
+        padding: 0.35em;
+        &:hover {
+            background-color: rgb(0, 219, 0);
+        }
+    }
+}

@@ -4,4 +4,4 @@ ADD . .
 
 RUN pip install prettytable numpy fastapi uvicorn
 
-CMD [ "python", "main.py"]
+CMD [ "python3", "main.py"]

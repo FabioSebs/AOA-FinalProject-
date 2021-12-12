@@ -10,6 +10,8 @@ import (
 	"strings"
 
 	"github.com/gocolly/colly/v2"
+	fiber "github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 )
 
 type City struct {
@@ -17,9 +19,30 @@ type City struct {
 	Position int    `json:"position"`
 }
 
-func Webscraper() {
-	cities := []City{}
+func Setup(app *fiber.App) {
+	app.Get("/api/cities", getCities)
+	app.Post("/api/change", changeCity)
+}
 
+func getCities(c *fiber.Ctx) error {
+	city := Webscraper("indonesia")
+	return c.JSON(city)
+}
+
+func changeCity(c *fiber.Ctx) error {
+	var data map[string]string
+
+	if err := c.BodyParser(&data); err != nil {
+		return err
+	}
+
+	city := Webscraper(data["country"])
+	return c.JSON(city)
+}
+
+func Webscraper(country string) []City {
+	cities := []City{}
+	country = strings.ToLower(country)
 	c := colly.NewCollector(
 		colly.AllowedDomains("mapsofworld.com", "www.mapsofworld.com"),
 	)
@@ -61,9 +84,11 @@ func Webscraper() {
 		fmt.Println("Visiting: ", r.URL)
 	})
 
-	c.Visit("https://www.mapsofworld.com/lat_long/indonesia-lat-long.html")
+	c.Visit("https://www.mapsofworld.com/lat_long/" + country + "-lat-long.html")
 
 	writeJSON(cities)
+
+	return cities
 }
 
 func writeJSON(data []City) {
@@ -78,5 +103,10 @@ func writeJSON(data []City) {
 }
 
 func main() {
-	Webscraper()
+	app := fiber.New()
+	app.Use(cors.New(cors.Config{
+		AllowCredentials: true,
+	}))
+	Setup(app)
+	app.Listen(":3030")
 }

@@ -11,6 +11,18 @@ services:
     
     networks:
       - connection
+  
+  map-api:
+    container_name: gomap
+
+    build:
+      context: dataset/
+
+    ports:
+      - "3030:3030"
+
+    networks:
+      - connection
 
   frontend:
     container_name: frontendAlgo
@@ -23,7 +35,7 @@ services:
 
     networks:
       - connection
-
+  
 networks:
   connection:
     driver: bridge

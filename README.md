@@ -21,6 +21,7 @@ Our final project will choose the cheapest path to travel from one destination t
 - Python
 - [FastAPI](https://fastapi.tiangolo.com/) - Python Web Framework
 - [Uvicorn](https://www.uvicorn.org/) - Python Web Server Framework
+- [Pydantic](https://pydantic-docs.helpmanual.io/) - Data Validation Framework
 - Go
 - [GoColly](http://go-colly.org/) - Go Scraping Framework
 - [GoFiber](http://go-colly.org/) - Go Web Framework
@@ -376,3 +377,67 @@ This mapify function is similar however it accounts for a goal node since we wan
 ---
 
 ### Python FastAPI / Uvicorn
+
+Python's FastAPI is a web framework for building APIs similar to Go Fiber. Very minimalistic syntax with this framework so the code is quite easy to digest.
+
+_!Question!_ - Why use 2 seperate APIs??? - The API made in Go is solely made to webscrape and the Python API is to accept requests and send back the _algorithm_ results since we coded the algorithms in Python.
+
+```python
+import uvicorn
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+```
+
+These are the imports that should be used along FastAPI. Uvicorn is an Asynchronous HTTP server that is lightwieght and very fast. Pydantic is a way to validate data coming from the client and also sending data to the client.
+
+```python
+app = FastAPI()
+
+
+class Travel(BaseModel):
+    start: str
+    goal: str
+
+```
+
+Here we instantiate a FastAPI() object and then make a BaseModel. This is what the user will send us! Basically this model is what will be validated on the User's request and the body of the reqeust has to have a start property of string and a goal property of string. I hope that is clear :D
+
+```python
+@app.post("/djikstra/")
+async def getDjikstra(nodes: Travel):
+    djik = graph.DjikstraGraph()
+    djik.populateGraphDjikstra(500)
+    start, goal = djik.mapify(nodes.start, nodes.goal)
+    print(start, goal)
+    return (search.DjikstraSearch(djik, start, goal))
+
+@app.post("/astar/")
+async def getAStar(nodes: Travel):
+    astar = graph.AStarGraph()
+    astar.populateGraphAStar(500)
+    start, goal = astar.mapify(nodes.start, nodes.goal)
+    res = search.AStar(astar, start, goal)
+    return res
+```
+
+These are our endpoints. Only 2 is needed since we have 2 algorithms we need results from. The Djikstra and AStar endpoint both run the algorithms and return the result as a python dictionary.
+
+```python
+origins = ["http://localhost:3000", "http://localhost"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=5000)
+```
+
+Here we tell FastAPI what IPV4's are allowed to make request to the server. Since we are running this locally we can just use localhost. This is done to avoid a violation of CORS policy. Next we run the Uvicorn HTTP Server for our API to live in.
+
+### Frontend

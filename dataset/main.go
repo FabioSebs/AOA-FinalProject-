@@ -1,6 +1,7 @@
 package main
 
 import (
+	"aoa/graph"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -103,6 +104,7 @@ func writeJSON(data []City) {
 }
 
 func main() {
+	graph.GenerateGraphNodes()
 	app := fiber.New()
 	app.Use(cors.New(cors.Config{
 		AllowCredentials: true,

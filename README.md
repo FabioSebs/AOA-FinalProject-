@@ -19,15 +19,132 @@ Our final project will choose the cheapest path to travel from one destination t
 ## Technologies and Libraries Used :technologist:
 
 - Python
+- [FastAPI](https://fastapi.tiangolo.com/) - Python Web Framework
+- [Uvicorn](https://www.uvicorn.org/) - Python Web Server Framework
 - Go
-- [JSON Library](https://github.com/nlohmann/json)
-- [Colly](https://github.com/gocolly/colly)
+- [GoColly](http://go-colly.org/) - Go Scraping Framework
+- [GoFiber](http://go-colly.org/) - Go Web Framework
+- JavaScript
+- [ReactJS](https://reactjs.org/) - JavaScript UI Library
+- [Axios](https://axios-http.com/) - HTTP Client for JS
+- Docker
 
 ---
 
 ## Code :zap:
 
+This project like most data driven projects begin in the search of the data. The solution was _webscraping_ so we use GoColly in order to webscrape this [website](https://www.mapsofworld.com/lat_long/indonesia-lat-long.html). GoColly is probably one of the fastest Scraping Frameworks out there so the data is written and exported to our proect directory blazing fast. The speed of the framework actually wasn't important at all since we were planning to only work with Indonesian Cities for our project but our Professor asked us to implement _Dynamic Webscraping_ during runtime, so the speed of GoColly actually became crucial. It is also a slick way of replacing a database to hold all of the city data we will use in our graph.
+
+### Webscraping
+
+This is a webscraping function that follows the documentation found on the GoColly website and even on their github repo. The OnHTML function uses Regular Expressions to clean the records of unwanted leading and trailing whitespace. We also use GoQuery which mimics JQuery to find DOM elements within the website we are webscraping. Lastly the function depends on the _country_ parameter given to it, since we are doing dynamic webscraping this parameter is needed.
+
+```go
+func Webscraper(country string) []City {
+	cities := []City{}
+	country = strings.ToLower(country)
+
+    // Collector Object
+	c := colly.NewCollector(
+		colly.AllowedDomains("mapsofworld.com", "www.mapsofworld.com"),
+	)
+
+    // OnHTML Event Listener
+	c.OnHTML("table.tableizer-table", func(element *colly.HTMLElement) {
+		info := element.DOM
+        //REGEX
+		name := regexp.MustCompile(`\W*\d*`)
+		numbers := regexp.MustCompile(`\D*`)
+		entry := info.Find("tbody").Find("tr").Find("td").Text()
+		entries := strings.SplitAfter(entry, "E")
+		// fmt.Println(entries)
+
+		for _, v := range entries {
+			var name_entry string
+
+			if len(name.ReplaceAllString(v, "${1}")) < 2 {
+				name_entry = name.ReplaceAllString(v, "${1}")
+			} else {
+				name_entry = name.ReplaceAllString(v, "${1}")[:len(name.ReplaceAllString(v, "${1}"))-2]
+			}
+
+			positionStr := numbers.ReplaceAllString(v, "${1}")
+
+			if len([]rune(positionStr)) >= 8 {
+				position, _ := strconv.Atoi(positionStr)
+
+				city := City{
+					Name:     name_entry,
+					Position: position,
+				}
+				cities = append(cities, city)
+			}
+
+		}
+
+	})
+
+    // Middleware Function to Print URL
+	c.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visiting: ", r.URL)
+	})
+
+    // Fires the OnHTML Function
+	c.Visit("https://www.mapsofworld.com/lat_long/" + country + "-lat-long.html")
+
+    // Util Function to write cities into JSON
+	writeJSON(cities)
+
+	return cities
+}
+```
+
+---
+
+### Go Fiber / Dynamic Webscraping
+
+Go Fiber is a Web Framework that is inspired by ExpressJS and has similar syntax to Express as well. This allows us to have an API that determines what cities we will have in our JSON file based on country. When someone initially does a GET Request on our API the cities in the JSON file will be Indonesia. Indonesia is the default. However when someone makes a POST request on our endpoint to change cities, the Webscraping logic will be launched and a new JSON file will be created. We will only have 2 primary endpoints. Here are our Routes/Endpoints.
+
+```go
+func Setup(app *fiber.App) {
+	app.Get("/api/cities", getCities)
+	app.Post("/api/change", changeCity)
+}
+```
+
+getCities() is just a function that defaults in exporting the JSON file as Indoenesian cities.
+
+```go
+func getCities(c *fiber.Ctx) error {
+	city := Webscraper("indonesia")
+	return c.JSON(city)
+}
+```
+
+changeCity() is self explanatory, but it uses Go Fiber's BodyParser() to parse the data the client sends in to our API and just gets the country. The incoming data is sent in as \*fiber.Ctx or known as context data that can be parsed or sent back to the client as a response. However the country is sent to the Webscraper() function and then the JSON file is successfully rewritten for our Python program to use.
+
+```go
+func changeCity(c *fiber.Ctx) error {
+	var data map[string]string
+
+	if err := c.BodyParser(&data); err != nil {
+		return err
+	}
+
+	city := Webscraper(data["country"])
+	return c.JSON(city)
+}
+```
+
+---
+
+## Graph Data Structure
+
+The following program has been structured to follow an OOP methodology. There will be basic principles like abstraction, inheritance, modularizing. There is no polymorphism, method overriding, and encapsulation.
+
 ### Vertex Class
+
+The Vertex Class acts a base class to inherit from for our two types Verteices we will need. Every vertex has data inside of it so the Vertex Class just has a data attribute. The Djikstra Vertex adds a weight to the factor and the AStarVertex inherits from the DjikstraVertex but adds in a hueristic attribute.
 
 ```python
 # Base Vertex Class
@@ -54,9 +171,11 @@ class AStarVertex(DjikstraVertex):
         return (self.data, self.weight, self.hueristic)
 ```
 
-Three different Vertex classes are needed since in the Djikstra Algorithm there is no hueristic involved.
-
 ---
+
+The Graph is consisted of two properties. The _self.vertices_ is supposed to be a list of Vertices so it is initialized as an empty list. This is where the objects that inherit from Vertex Class will go in.
+
+The _self.edges_ is supposed to be a dictionary with the key/value pair as Vertex/[]Vertex, so we initialize it as an empty dictionary for later appending. To clarify the edges key will have a Vertex as the key and the value will be a list of their neighbors.
 
 ### **Graph Class**
 
@@ -68,9 +187,7 @@ class Graph():
         self.edges = {}
 ```
 
-The Graph is consisted of two properties. The _self.vertices_ is supposed to be a list of Vertices so it is initialized as an empty list.
-
-The _self.edges_ is supposed to be a dictionary with the key/value pair as Vertex/[]Vertex, however we initialize it as an empty dictionary.
+Empty function that uses a ternary statement. Code Translated: True if list of vertices is not filled, else if filled return False.
 
 ### **isEmpty()**
 
@@ -78,8 +195,6 @@ The _self.edges_ is supposed to be a dictionary with the key/value pair as Verte
 def isEmpty(self):
         return True if not len(self.vertices) else False
 ```
-
-Empty function that uses a ternary statement. Code Translated: True if list of vertices is not filled, else if filled return False.
 
 ### **addVertex() & addEdges()**
 
@@ -257,3 +372,7 @@ class AStarGraph(Graph):
 This AStarGraph is similar to the Djikstra Graph just the only difference is that we account for hueristics which has yet to be implemented. We also overload the _printGraph()_ function so that the column has the right name and includes Hueristic.
 
 This mapify function is similar however it accounts for a goal node since we want to have correct hueristics. We make a utility function _distanceFrom()_ to help us in the calculation of the hueristics.
+
+---
+
+### Python FastAPI / Uvicorn

@@ -1,21 +1,85 @@
-.djikstraContainer {
+.finalContainer {
+    background-color: #58b19f;
+    height: 100vh;
+    text-align: center;
+    top: -45px;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 10px;
+    scroll-snap-align: start;
 
-    input {
-        &:hover {
-            background-color: bisque;
-            cursor: pointer;
+    h1 {
+        padding-top: 50px;
+    }
+
+    .djikstraContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        background-color: #f8efba;
+
+        input {
+            &:hover {
+                background-color: bisque;
+                cursor: pointer;
+            }
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 0.35em;
+            &:hover {
+                background-color: rgb(0, 219, 0);
+            }
         }
     }
-    button {
-        background-color: green;
-        color: white;
-        padding: 0.35em;
-        &:hover {
-            background-color: rgb(0, 219, 0);
+
+    .djikstraResults {
+        display: flex;
+        flex-direction: column;
+
+        .cityList {
+            :first-child {
+                color: rgb(104, 226, 100);
+            }
+
+            :last-child {
+                color: rgb(255, 145, 0);
+            }
+
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+    .astarContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        top: -55px;
+        position: relative;
+        input {
+            &:hover {
+                background-color: bisque;
+                cursor: pointer;
+            }
+        }
+        button {
+            background-color: #182c61;
+            color: white;
+            padding: 0.35em;
+            &:hover {
+                background-color: #1b9cfc;
+            }
         }
     }
 }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import "../styles/cities.css"
+
 
 const GraphView = () => {
     let [map, setMap] = useState([])
@@ -23,7 +25,8 @@ const GraphView = () => {
         }
     }
 
-    const changeGraph = async () => {
+    const changeGraph = async (e) => {
+        e.preventDefault();
         try {
             cities.length = 0
             const res = await axios.post('http://localhost:3030/api/change', {
@@ -48,25 +51,24 @@ const GraphView = () => {
     }
 
     return (
-        <div>
-            <h2> Country: {country} </h2>
+        <div className='countryContainer'>
+            <h1> Country: {country} </h1>
             <div className="tableContainer">
-                <table>
-                    <thead>
-                        <tr><th>Cities</th></tr>
-                    </thead>
-                    <tbody>
-                        {map.map(city => <tr> <td key={city}> {city} </td></tr>)}
-                    </tbody>
-                </table>
-            </div>
-            <button onClick={!check ? getGraph : resetCities}> {buttonTxt} </button>
 
-            <form>
+                <h2 className='titleGraph'>Cities</h2>
+                <div className='cities'>
+                    {map.map(city => <h4 key={city}> {city} </h4>)}
+                </div>
+
+            </div>
+            {/* <button onClick={!check ? getGraph : resetCities}> {buttonTxt} </button> */}
+
+            <form className='webscrapeForm'>
                 <label for="changeCountry"> Change Country </label>
                 <input type="text" name="changeCountry" onChange={e => setCountry(e.target.value)} />
+                <button type="button" onClick={e => changeGraph(e)}> Change </button>
             </form>
-            <button onClick={changeGraph}> Change </button>
+
 
         </div>
     )

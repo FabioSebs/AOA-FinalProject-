@@ -6,19 +6,20 @@ import "../styles/cities.css"
 const GraphView = () => {
     let [map, setMap] = useState([])
     let [country, setCountry] = useState('Indonesia')
-    let [check, setCheck] = useState(false)
-    let [buttonTxt, setButtonTxt] = useState("Show Cities")
-    const cities = []
+    let [initialLoad, setInitialLoad] = useState(true)
+    let cities = []
 
     const getGraph = async () => {
+        cities = []
+        setMap([])
+        setInitialLoad(false)
         try {
             const res = await axios.get('http://localhost:3030/api/cities')
             res.data.forEach(element => {
                 cities.push(element.name)
             });
             setMap(cities)
-            setCheck(true)
-            setButtonTxt("Hide Cities")
+
             console.log(res.data)
         } catch (error) {
             console.log(error)
@@ -27,6 +28,8 @@ const GraphView = () => {
 
     const changeGraph = async (e) => {
         e.preventDefault();
+        cities = []
+        setMap([])
         try {
             cities.length = 0
             const res = await axios.post('http://localhost:3030/api/change', {
@@ -36,22 +39,17 @@ const GraphView = () => {
                 cities.push(element.name)
             });
             setMap(cities)
-            setCheck(true)
-            setButtonTxt("Hide Cities")
             console.log(res)
         } catch (error) {
             console.log(error)
         }
     }
 
-    const resetCities = () => {
-        setCheck(false)
-        setMap([])
-        setButtonTxt("Show Cities")
-    }
 
     return (
         <div className='countryContainer'>
+            {initialLoad && getGraph()}
+
             <h1> Country: {country} </h1>
             <div className="tableContainer">
 
@@ -61,7 +59,6 @@ const GraphView = () => {
                 </div>
 
             </div>
-            {/* <button onClick={!check ? getGraph : resetCities}> {buttonTxt} </button> */}
 
             <form className='webscrapeForm'>
                 <label for="changeCountry"> Change Country </label>

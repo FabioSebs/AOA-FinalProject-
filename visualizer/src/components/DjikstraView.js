@@ -49,6 +49,7 @@ const DjikstraView = () => {
 					<h3> {cities ? "Traveled Cities" : null} </h3>
 					<ul className="cityList">
 						{cities ? cities.map(city => <li>{city}</li>) : null}
+						<li>{cities && goalNode}</li>
 					</ul>
 				</div>
 			</form>

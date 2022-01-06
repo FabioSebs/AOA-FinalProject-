@@ -24,10 +24,6 @@
   "position": 53313800
  },
  {
-  "name": "AgungGunung",
-  "position": 82011528
- },
- {
   "name": "Aimere",
   "position": 84512103
  },
@@ -48,10 +44,6 @@
   "position": 32012855
  },
  {
-  "name": "Amamapare",
-  "position": 45313638
- },
- {
   "name": "Ambon",
   "position": 34312812
  },
@@ -68,44 +60,12 @@
   "position": 10512440
  },
  {
-  "name": "AnambasKepulauan",
-  "position": 32010630
- },
- {
-  "name": "AnambasIsAnambasKepulauan",
-  "position": 32010630
- },
- {
   "name": "Ansudu",
   "position": 21113922
  },
  {
-  "name": "AnyerKidul",
-  "position": 60410553
- },
- {
   "name": "Arjuna",
   "position": 74911234
- },
- {
-  "name": "AruKepulauan",
-  "position": 60013430
- },
- {
-  "name": "AruIsAruKepulauan",
-  "position": 60013430
- },
- {
-  "name": "AsiaKepulauan",
-  "position": 10013113
- },
- {
-  "name": "Auponhia",
-  "position": 15812527
- },
- {
-  "name": "AyuKepulauan",
-  "position": 3513105
  },
  {
   "name": "Baa",
@@ -120,68 +80,24 @@
   "position": 23013330
  },
  {
-  "name": "BacanKepulauan",
-  "position": 3512730
- },
- {
-  "name": "BadasKepulauan",
-  "position": 4510705
- },
- {
   "name": "Bade",
   "position": 71013935
- },
- {
-  "name": "Bagansiapiapi",
-  "position": 21210050
  },
  {
   "name": "Baing",
   "position": 101412034
  },
  {
-  "name": "BalabalanganKepulauan",
-  "position": 22011730
- },
- {
   "name": "Bali",
   "position": 82011500
  },
  {
   "name": "Bali",
   "position": 82011500
- },
- {
-  "name": "BaliSelat",
-  "position": 81811425
- },
- {
-  "name": "Balikpapan",
-  "position": 11011655
- },
- {
-  "name": "BandaKepulauan",
-  "position": 43712950
- },
- {
-  "name": "BandaAceh",
-  "position": 5359520
  },
  {
   "name": "lat",
   "position": 54013305
- },
- {
-  "name": "BandaIsBandaKepulauan",
-  "position": 43712950
- },
- {
-  "name": "BandaSea",
-  "position": 60013000
- },
- {
-  "name": "Bandanaira",
-  "position": 43212954
  },
  {
   "name": "Bandung",
@@ -192,76 +108,16 @@
   "position": 13412330
  },
  {
-  "name": "BanggaiKepulauan",
-  "position": 14012330
- },
- {
-  "name": "BanggaiArchBanggaiKepulauan",
-  "position": 14012330
- },
- {
-  "name": "BangkaSulawesi",
-  "position": 15012505
- },
- {
-  "name": "BangkaSumatera",
-  "position": 20010550
- },
- {
-  "name": "BangkaSelat",
-  "position": 23010530
- },
- {
-  "name": "Bangkalan",
-  "position": 70211246
- },
- {
-  "name": "Bangkinang",
-  "position": 1810105
- },
- {
   "name": "Bangko",
   "position": 20510209
- },
- {
-  "name": "Banjarmasin",
-  "position": 32011435
- },
- {
-  "name": "Bantaeng",
-  "position": 53211956
  },
  {
   "name": "Bantul",
   "position": 75511019
  },
  {
-  "name": "BanyakKepulauan",
-  "position": 2109710
- },
- {
-  "name": "Banyumas",
-  "position": 73210918
- },
- {
-  "name": "Banyuwangi",
-  "position": 81311421
- },
- {
   "name": "Barabai",
   "position": 23211534
- },
- {
-  "name": "Barapasi",
-  "position": 21513705
- },
- {
-  "name": "BaratDayaKepulauan",
-  "position": 73012800
- },
- {
-  "name": "BarisanBukit",
-  "position": 33010215
  },
  {
   "name": "Barito",
@@ -276,20 +132,8 @@
   "position": 5513040
  },
  {
-  "name": "BatuKapulauan",
-  "position": 309825
- },
- {
-  "name": "BatuIsBatuKepulauan",
-  "position": 309825
- },
- {
   "name": "Batuata",
   "position": 61212242
- },
- {
-  "name": "Baturaja",
-  "position": 41110415
  },
  {
   "name": "Baubau",
@@ -308,44 +152,12 @@
   "position": 13510550
  },
  {
-  "name": "BelitonIsBelitung",
-  "position": 31010750
- },
- {
-  "name": "Belitung",
-  "position": 31010750
- },
- {
-  "name": "Bangkalis",
-  "position": 13010210
- },
- {
-  "name": "Bengkulu",
-  "position": 35010212
- },
- {
-  "name": "Bengkulu",
-  "position": 34810216
- },
- {
   "name": "Benteng",
   "position": 61012030
  },
  {
   "name": "Beo",
   "position": 42512650
- },
- {
-  "name": "BerauTeluk",
-  "position": 23013230
- },
- {
-  "name": "Berebere",
-  "position": 22512845
- },
- {
-  "name": "BerhalaSelat",
-  "position": 10010415
  },
  {
   "name": "Besar",
@@ -360,20 +172,12 @@
   "position": 20512526
  },
  {
-  "name": "BillitonIsBelitung",
-  "position": 31010750
- },
- {
   "name": "Bima",
   "position": 82211849
  },
  {
   "name": "Binjai",
   "position": 3209830
- },
- {
-  "name": "Binongko",
-  "position": 55712402
  },
  {
   "name": "Bintan",
@@ -404,26 +208,6 @@
   "position": 63610648
  },
  {
-  "name": "Bojonegoro",
-  "position": 71111154
- },
- {
-  "name": "Bondowoso",
-  "position": 75511349
- },
- {
-  "name": "BoneTeluk",
-  "position": 41012050
- },
- {
-  "name": "Bonerate",
-  "position": 72512105
- },
- {
-  "name": "BonerateKepulauan",
-  "position": 63012110
- },
- {
   "name": "Bonoi",
   "position": 14513741
  },
@@ -436,36 +220,12 @@
   "position": 10513610
  },
  {
-  "name": "Boyolali",
-  "position": 73211035
- },
- {
   "name": "Brebes",
   "position": 65210903
  },
  {
-  "name": "Buapinang",
-  "position": 44012130
- },
- {
-  "name": "BugelTanjung",
-  "position": 62611103
- },
- {
-  "name": "Bukittinggi",
-  "position": 2010020
- },
- {
   "name": "Bula",
   "position": 30613030
- },
- {
-  "name": "BuliTeluk",
-  "position": 4812825
- },
- {
-  "name": "Bulukumba",
-  "position": 55312011
  },
  {
   "name": "Buntok",
@@ -488,48 +248,16 @@
   "position": 50012245
  },
  {
-  "name": "ButungButon",
-  "position": 50012245
- },
- {
   "name": "Calang",
   "position": 4379537
- },
- {
-  "name": "CaremeCiremai",
-  "position": 65510827
- },
- {
-  "name": "CelebesSea",
-  "position": 30012300
- },
- {
-  "name": "CenderwasihTeluk",
-  "position": 30013520
  },
  {
   "name": "Cepu",
   "position": 70911135
  },
  {
-  "name": "CeramSeram",
-  "position": 31012900
- },
- {
-  "name": "CeramSeaSeramSea",
-  "position": 23012830
- },
- {
   "name": "Ciamis",
   "position": 72010821
- },
- {
-  "name": "Cijanjur",
-  "position": 64910708
- },
- {
-  "name": "Cijulang",
-  "position": 74210827
  },
  {
   "name": "Cilacap",
@@ -548,32 +276,12 @@
   "position": 42610213
  },
  {
-  "name": "DaboPasirkuning",
-  "position": 3010433
- },
- {
   "name": "Damar",
   "position": 70712840
  },
  {
-  "name": "DampierSelat",
-  "position": 4013100
- },
- {
   "name": "Dana",
   "position": 110012252
- },
- {
-  "name": "DanauPoso",
-  "position": 15212035
- },
- {
-  "name": "DatuTanjung",
-  "position": 20510939
- },
- {
-  "name": "DatukTanjongDatuTanjung",
-  "position": 20510939
  },
  {
   "name": "Demak",
@@ -588,24 +296,8 @@
   "position": 30710756
  },
  {
-  "name": "Denpasar",
-  "position": 83911513
- },
- {
   "name": "Digul",
   "position": 70713842
- },
- {
-  "name": "DjakartaJakarta",
-  "position": 60910649
- },
- {
-  "name": "DjawaJawa",
-  "position": 70011000
- },
- {
-  "name": "DoberaiJazirah",
-  "position": 12513300
  },
  {
   "name": "Dobo",
@@ -616,32 +308,12 @@
   "position": 21412749
  },
  {
-  "name": "DolakPulau",
-  "position": 80013830
- },
- {
-  "name": "DondoTeluk",
-  "position": 5012030
- },
- {
-  "name": "Donggala",
-  "position": 3011940
- },
- {
   "name": "Dumai",
   "position": 13510128
  },
  {
-  "name": "DUrvilleTanjung",
-  "position": 12813754
- },
- {
   "name": "liase",
   "position": 82113048
- },
- {
-  "name": "narotali",
-  "position": 35513621
  },
  {
   "name": "nde",
@@ -656,24 +328,8 @@
   "position": 25513218
  },
  {
-  "name": "FatagarTanjun",
-  "position": 24613157
- },
- {
-  "name": "FlamingoTeluk",
-  "position": 53013800
- },
- {
-  "name": "FleskoTanjung",
-  "position": 2912430
- },
- {
   "name": "Flores",
   "position": 83512100
- },
- {
-  "name": "FloresSea",
-  "position": 63012000
  },
  {
   "name": "Fluk",
@@ -684,16 +340,8 @@
   "position": 15012749
  },
  {
-  "name": "anedidalemGani",
-  "position": 4812814
- },
- {
   "name": "Gani",
   "position": 4812814
- },
- {
-  "name": "GanyemGenyem",
-  "position": 24614012
  },
  {
   "name": "Garut",
@@ -702,10 +350,6 @@
  {
   "name": "Gebe",
   "position": 512925
- },
- {
-  "name": "GeelvinkBCenderwasihTeluk",
-  "position": 30013520
  },
  {
   "name": "Genteng",
@@ -720,48 +364,12 @@
   "position": 35013054
  },
  {
-  "name": "Gomogomo",
-  "position": 63913443
- },
- {
-  "name": "GorongKepulauan",
-  "position": 35913125
- },
- {
-  "name": "Gorontalo",
-  "position": 3512305
- },
- {
-  "name": "GreatSangiSangihePulau",
-  "position": 33512530
- },
- {
-  "name": "GreaterSundaIs",
-  "position": 70011200
- },
- {
   "name": "Gresik",
   "position": 71311238
  },
  {
-  "name": "GuhakolakTanjung",
-  "position": 65010514
- },
- {
   "name": "Gumzai",
   "position": 52813442
- },
- {
-  "name": "Gunungapi",
-  "position": 64512630
- },
- {
-  "name": "Gunungsitoli",
-  "position": 1159730
- },
- {
-  "name": "Halmahera",
-  "position": 4012800
  },
  {
   "name": "Har",
@@ -770,14 +378,6 @@
  {
   "name": "Hari",
   "position": 11610405
- },
- {
-  "name": "HayaTehoru",
-  "position": 32312930
- },
- {
-  "name": "HollandiaJayapura",
-  "position": 22814038
  },
  {
   "name": "Ibonma",
@@ -796,20 +396,8 @@
   "position": 75512630
  },
  {
-  "name": "Inanwatan",
-  "position": 20813210
- },
- {
-  "name": "Indramayu",
-  "position": 62010819
- },
- {
   "name": "Jailolo",
   "position": 10512730
- },
- {
-  "name": "JailoloSelat",
-  "position": 512905
  },
  {
   "name": "Jakarta",
@@ -824,52 +412,12 @@
   "position": 13010230
  },
  {
-  "name": "JapenYapen",
-  "position": 15013600
- },
- {
-  "name": "Jatibarang",
-  "position": 62810818
- },
- {
-  "name": "Jatinegara",
-  "position": 61310652
- },
- {
-  "name": "JavaJawa",
-  "position": 70011000
- },
- {
-  "name": "JavaBarat",
-  "position": 70010700
- },
- {
   "name": "JavaSea",
   "position": 43510715
  },
  {
-  "name": "JavaTengah",
-  "position": 70011000
- },
- {
-  "name": "JavaTimur",
-  "position": 80011300
- },
- {
   "name": "Jawa",
   "position": 70011000
- },
- {
-  "name": "JayaPuncak",
-  "position": 35713717
- },
- {
-  "name": "Jayapura",
-  "position": 22814038
- },
- {
-  "name": "JayawijayaPegunungan",
-  "position": 50013900
  },
  {
   "name": "Jemaja",
@@ -884,10 +432,6 @@
   "position": 360814201
  },
  {
-  "name": "JogjakartaYogyakarta",
-  "position": 74911022
- },
- {
   "name": "Jombang",
   "position": 73311214
  },
@@ -900,32 +444,8 @@
   "position": 51512200
  },
  {
-  "name": "Kabanjahe",
-  "position": 3069830
- },
- {
-  "name": "Kaburuang",
-  "position": 35012630
- },
- {
   "name": "Kahayan",
   "position": 34011400
- },
- {
-  "name": "KaiKapulauan",
-  "position": 55513245
- },
- {
-  "name": "KaiBesar",
-  "position": 53513300
- },
- {
-  "name": "KaiIsKaiKepulauan",
-  "position": 55513245
- },
- {
-  "name": "KaiKecil",
-  "position": 54513240
  },
  {
   "name": "Kaimana",
@@ -936,128 +456,28 @@
   "position": 4713340
  },
  {
-  "name": "Kalabahi",
-  "position": 81312431
- },
- {
   "name": "Kalao",
   "position": 72112100
- },
- {
-  "name": "Kalaotoa",
-  "position": 72012150
- },
- {
-  "name": "Kalianda",
-  "position": 55010545
- },
- {
-  "name": "Kalimantan",
-  "position": 50011400
- },
- {
-  "name": "KalimantanBarat",
-  "position": 30011030
- },
- {
-  "name": "KalimantanSelatan",
-  "position": 23011530
- },
- {
-  "name": "KalimantanTengah",
-  "position": 20011330
- },
- {
-  "name": "KalimantanTimur",
-  "position": 13011630
  },
  {
   "name": "Kampar",
   "position": 3010308
  },
  {
-  "name": "KampungbaruTolitoli",
-  "position": 10512050
- },
- {
-  "name": "KamrauTeluk",
-  "position": 33013336
- },
- {
-  "name": "Kandangan",
-  "position": 25011520
- },
- {
-  "name": "Kandanghaur",
-  "position": 62110806
- },
- {
-  "name": "KangeanKeppulauan",
-  "position": 65511523
- },
- {
-  "name": "KangeanIsKangeanKepulauan",
-  "position": 65511523
- },
- {
   "name": "Kapuas",
   "position": 2510920
- },
- {
-  "name": "Karakelong",
-  "position": 43512650
- },
- {
-  "name": "Karakitang",
-  "position": 31412528
  },
  {
   "name": "Karambu",
   "position": 35311606
  },
  {
-  "name": "Karanganyar",
-  "position": 73810937
- },
- {
-  "name": "Karawang",
-  "position": 63010715
- },
- {
-  "name": "KarimataKepulauan",
-  "position": 12510900
- },
- {
-  "name": "KarimataSelat",
-  "position": 20010840
- },
- {
-  "name": "KarimataIsKarimataKepulauan",
-  "position": 12510900
- },
- {
-  "name": "KarimunjawaKepulauan",
-  "position": 55011030
- },
- {
   "name": "Karufa",
   "position": 35013320
  },
  {
-  "name": "Kasiruta",
-  "position": 2512712
- },
- {
-  "name": "KatinganMendawai",
-  "position": 33011300
- },
- {
   "name": "Kawasi",
   "position": 13812728
- },
- {
-  "name": "KawioKepulauan",
-  "position": 43012530
  },
  {
   "name": "Kayan",
@@ -1080,10 +500,6 @@
   "position": 75111201
  },
  {
-  "name": "Kafamenanu",
-  "position": 92812429
- },
- {
   "name": "Kema",
   "position": 12212508
  },
@@ -1096,20 +512,12 @@
   "position": 35012230
  },
  {
-  "name": "Kendawangan",
-  "position": 23211017
- },
- {
   "name": "Kepi",
   "position": 63213919
  },
  {
   "name": "Kerinci",
   "position": 14010115
- },
- {
-  "name": "Ketapang",
-  "position": 15511000
  },
  {
   "name": "Kimaam",
@@ -1144,76 +552,16 @@
   "position": 40312146
  },
  {
-  "name": "KolepomDolakPulau",
-  "position": 80013830
- },
- {
-  "name": "Kolonodale",
-  "position": 20012119
- },
- {
   "name": "Komodo",
   "position": 83711920
- },
- {
-  "name": "KomoranPulau",
-  "position": 81813845
- },
- {
-  "name": "Kotaagung",
-  "position": 53810429
- },
- {
-  "name": "Kotabaru",
-  "position": 32011620
- },
- {
-  "name": "Kotabumi",
-  "position": 44910454
- },
- {
-  "name": "Kotamobagu",
-  "position": 5712431
  },
  {
   "name": "Kragan",
   "position": 64311138
  },
  {
-  "name": "KrakatauRakataPulau",
-  "position": 61010520
- },
- {
-  "name": "KrakatoaRakataPulau",
-  "position": 61010520
- },
- {
   "name": "Krau",
   "position": 31914005
- },
- {
-  "name": "Kualajelai",
-  "position": 25811046
- },
- {
-  "name": "Kualakapuas",
-  "position": 25511420
- },
- {
-  "name": "Kualakurun",
-  "position": 11011350
- },
- {
-  "name": "Kualapembuang",
-  "position": 31411238
- },
- {
-  "name": "Kualasimpang",
-  "position": 4179803
- },
- {
-  "name": "Kuandang",
-  "position": 5612301
  },
  {
   "name": "Kudus",
@@ -1224,24 +572,8 @@
   "position": 24411143
  },
  {
-  "name": "KumambaKepulauan",
-  "position": 13613845
- },
- {
-  "name": "Kuningan",
-  "position": 65910829
- },
- {
   "name": "Kupang",
   "position": 101912339
- },
- {
-  "name": "KutarajaBandaAceh",
-  "position": 5359520
- },
- {
-  "name": "Kwatisore",
-  "position": 31813450
  },
  {
   "name": "Kwoka",
@@ -1254,10 +586,6 @@
  {
   "name": "Labuhan",
   "position": 62210550
- },
- {
-  "name": "Labuhanbajo",
-  "position": 82811954
  },
  {
   "name": "Lahat",
@@ -1280,10 +608,6 @@
   "position": 4309757
  },
  {
-  "name": "Larantuka",
-  "position": 82112255
- },
- {
   "name": "Larat",
   "position": 70013200
  },
@@ -1294,14 +618,6 @@
  {
   "name": "Laut",
   "position": 44510800
- },
- {
-  "name": "LautPulau",
-  "position": 34011610
- },
- {
-  "name": "LautKecilKepulauan",
-  "position": 44511540
  },
  {
   "name": "Lawele",
@@ -1316,40 +632,12 @@
   "position": 14513015
  },
  {
-  "name": "LesserSundaIs",
-  "position": 80012000
- },
- {
-  "name": "LetiKepulauan",
-  "position": 81012800
- },
- {
-  "name": "LetiIsLetiKepulauan",
-  "position": 81012800
- },
- {
   "name": "Letong",
   "position": 25810542
  },
  {
   "name": "LeuserG",
   "position": 3469712
- },
- {
-  "name": "LhokkruetIndonesia",
-  "position": 4559524
- },
- {
-  "name": "LhokseumaweIndonesia",
-  "position": 5109710
- },
- {
-  "name": "LiangpranIndonesia",
-  "position": 10411423
- },
- {
-  "name": "LiboboTanjung",
-  "position": 5412828
  },
  {
   "name": "Lima",
@@ -1364,60 +652,12 @@
   "position": 1210437
  },
  {
-  "name": "LinggaKepulauan",
-  "position": 1010430
- },
- {
-  "name": "LinggaArchLinggaKepulauan",
-  "position": 1010430
- },
- {
-  "name": "LittleLautIsLautKecilKepulauan",
-  "position": 44511540
- },
- {
-  "name": "LiukangTenggajaSabalanaKepulauan",
-  "position": 64511850
- },
- {
-  "name": "LojiKasasi",
-  "position": 13812728
- },
- {
   "name": "Lomblen",
   "position": 83012332
  },
  {
   "name": "Lombok",
   "position": 84511630
- },
- {
-  "name": "Lomppbatang",
-  "position": 52411956
- },
- {
-  "name": "Longiram",
-  "position": 511545
- },
- {
-  "name": "Longnawan",
-  "position": 15111455
- },
- {
-  "name": "Lubukinggau",
-  "position": 31510255
- },
- {
-  "name": "Lubuksikaping",
-  "position": 1010015
- },
- {
-  "name": "Lumajang",
-  "position": 80811313
- },
- {
-  "name": "LumutTanjung",
-  "position": 35010558
  },
  {
   "name": "Luwuk",
@@ -1432,20 +672,8 @@
   "position": 7301140
  },
  {
-  "name": "MaduraSelat",
-  "position": 73011320
- },
- {
-  "name": "Megelang",
-  "position": 72911013
- },
- {
   "name": "MahakaM",
   "position": 3511717
- },
- {
-  "name": "Majalengka",
-  "position": 65010813
  },
  {
   "name": "Majene",
@@ -1456,24 +684,8 @@
   "position": 30611951
  },
  {
-  "name": "MakasarUjungPandang",
-  "position": 51011920
- },
- {
-  "name": "MakasarSelat",
-  "position": 1011820
- },
- {
-  "name": "MakasarstrOfMakasarSelat",
-  "position": 1011820
- },
- {
   "name": "Makian",
   "position": 2012720
- },
- {
-  "name": "Malamala",
-  "position": 32112055
  },
  {
   "name": "Maliku",
@@ -1488,10 +700,6 @@
   "position": 25511920
  },
  {
-  "name": "Mabberamo",
-  "position": 2013750
- },
- {
   "name": "Mamuju",
   "position": 24111850
  },
@@ -1500,28 +708,8 @@
   "position": 12912451
  },
  {
-  "name": "MandalaPuncak",
-  "position": 44414020
- },
- {
-  "name": "MandarTeluk",
-  "position": 33511915
- },
- {
-  "name": "Mandioli",
-  "position": 4012720
- },
- {
   "name": "Manggar",
   "position": 25010810
- },
- {
-  "name": "Manggawitu",
-  "position": 40813332
- },
- {
-  "name": "MangkalihatTanjung",
-  "position": 10211859
  },
  {
   "name": "Mangole",
@@ -1536,32 +724,8 @@
   "position": 33512305
  },
  {
-  "name": "MaokePegunungan",
-  "position": 34013730
- },
- {
-  "name": "MapiaKepulauan",
-  "position": 5013420
- },
- {
   "name": "Maratua",
   "position": 21011835
- },
- {
-  "name": "MartapuraKalimantan",
-  "position": 32211447
- },
- {
-  "name": "MartapuraSumatera",
-  "position": 41610422
- },
- {
-  "name": "MasaleMboKepulauan",
-  "position": 53511430
- },
- {
-  "name": "MasalimaKepulauan",
-  "position": 50411705
  },
  {
   "name": "Masamba",
@@ -1570,10 +734,6 @@
  {
   "name": "Masela",
   "position": 80912951
- },
- {
-  "name": "MashoiAmahai",
-  "position": 32012855
  },
  {
   "name": "Matak",
@@ -1596,28 +756,12 @@
   "position": 3409838
  },
  {
-  "name": "Mekongga",
-  "position": 33912115
- },
- {
   "name": "Melolo",
   "position": 95312040
  },
  {
   "name": "Memboro",
   "position": 93011930
- },
- {
-  "name": "Mempawah",
-  "position": 3010905
- },
- {
-  "name": "Mendawai",
-  "position": 3301130
- },
- {
-  "name": "Menggala",
-  "position": 430105415
  },
  {
   "name": "Merak",
@@ -1628,32 +772,12 @@
   "position": 82914024
  },
  {
-  "name": "Meulaboh",
-  "position": 4119603
- },
- {
-  "name": "Meureudu",
-  "position": 5199610
- },
- {
-  "name": "mindiptana",
-  "position": 55514022
- },
- {
   "name": "Misool",
   "position": 15213010
  },
  {
-  "name": "Mojokerto",
-  "position": 72811226
- },
- {
   "name": "Molu",
   "position": 64513140
- },
- {
-  "name": "MoluccsSea",
-  "position": 6451250
  },
  {
   "name": "Mondego",
@@ -1674,46 +798,6 @@
  {
   "name": "Moya",
   "position": 81011740
- },
- {
-  "name": "Muarabungo",
-  "position": 12810252
- },
- {
-  "name": "Muaraenim",
-  "position": 34010350
- },
- {
-  "name": "Muarajuloi",
-  "position": 1211403
- },
- {
-  "name": "Murakaman",
-  "position": 211645
- },
- {
-  "name": "Muaratebo",
-  "position": 13010226
- },
- {
-  "name": "Muaratembesi",
-  "position": 14210308
- },
- {
-  "name": "Muaratewe",
-  "position": 5811452
- },
- {
-  "name": "MuburPulau",
-  "position": 32010612
- },
- {
-  "name": "Mukomuko",
-  "position": 23010110
- },
- {
-  "name": "MullerPegunungan",
-  "position": 3011330
  },
  {
   "name": "Muna",
@@ -1752,44 +836,12 @@
   "position": 34612646
  },
  {
-  "name": "Nangapinoh",
-  "position": 2011144
- },
- {
-  "name": "Nangatayap",
-  "position": 13211034
- },
- {
-  "name": "NanusaKepulauan",
-  "position": 44512701
- },
- {
-  "name": "NatunaBesarKepulauan",
-  "position": 4010815
- },
- {
-  "name": "NatunaIsNatunaBesarKepulauan",
-  "position": 4010815
- },
- {
-  "name": "NatunaSelatanKepulauan",
-  "position": 2451090
- },
- {
   "name": "Ngabang",
   "position": 2310955
  },
  {
-  "name": "NgabordamluTanjung",
-  "position": 65613411
- },
- {
   "name": "Ngawi",
   "position": 72411126
- },
- {
-  "name": "Nikiniki",
-  "position": 94912430
  },
  {
   "name": "Nila",
@@ -1800,32 +852,12 @@
   "position": 5511006
  },
  {
-  "name": "NorthPagaiIPagaiUtaraPulau",
-  "position": 2351000
- },
- {
   "name": "Nuboai",
   "position": 21013630
  },
  {
   "name": "Numfoor",
   "position": 1013450
- },
- {
-  "name": "NusaBarung",
-  "position": 83011330
- },
- {
-  "name": "NusaKambangan",
-  "position": 74010810
- },
- {
-  "name": "NusaTenggaraBarat",
-  "position": 85011730
- },
- {
-  "name": "NusaTenggaraTimur",
-  "position": 9301220
  },
  {
   "name": "Obi",
@@ -1844,10 +876,6 @@
   "position": 45914035
  },
  {
-  "name": "OmbaiSelat",
-  "position": 83012450
- },
- {
   "name": "Onang",
   "position": 30211849
  },
@@ -1856,24 +884,8 @@
   "position": 81211107
  },
  {
-  "name": "PadaidoKepulauan",
-  "position": 11513630
- },
- {
   "name": "Padang",
   "position": 1010020
- },
- {
-  "name": "Padangpanjang",
-  "position": 4010020
- },
- {
-  "name": "Padangsidempuan",
-  "position": 1309915
- },
- {
-  "name": "PagaiSelatanPulau",
-  "position": 3010015
  },
  {
   "name": "Pagatan",
@@ -1884,52 +896,12 @@
   "position": 12110034
  },
  {
-  "name": "Palangkaraya",
-  "position": 21611356
- },
- {
   "name": "Paleleh",
   "position": 11012150
  },
  {
-  "name": "Palembang",
-  "position": 3010450
- },
- {
   "name": "Palopo",
   "position": 3012016
- },
- {
-  "name": "Pamanukan",
-  "position": 61610749
- },
- {
-  "name": "Pampanua",
-  "position": 41612008
- },
- {
-  "name": "Panaitan",
-  "position": 63610512
- },
- {
-  "name": "Pandegelang",
-  "position": 62510605
- },
- {
-  "name": "PangkahTanjung",
-  "position": 65111233
- },
- {
-  "name": "Pangkajene",
-  "position": 44611934
- },
- {
-  "name": "Pangkalanbrandan",
-  "position": 4019820
- },
- {
-  "name": "Pangkalanbuun",
-  "position": 24111137
  },
  {
   "name": "Pantar",
@@ -1944,22 +916,6 @@
   "position": 74311212
  },
  {
-  "name": "Parepare",
-  "position": 4011940
- },
- {
-  "name": "Pasirian",
-  "position": 81311308
- },
- {
-  "name": "Pasirkuning",
-  "position": 3010433
- },
- {
-  "name": "Pasuruan",
-  "position": 74011244
- },
- {
   "name": "Patani",
   "position": 2012850
  },
@@ -1968,60 +924,12 @@
   "position": 64511101
  },
  {
-  "name": "Pekalongan",
-  "position": 65310940
- },
- {
-  "name": "Pekanbaru",
-  "position": 3010115
- },
- {
-  "name": "PelabuhanRatuTeluk",
-  "position": 70510630
- },
- {
-  "name": "Pelabuhanratu",
-  "position": 7010632
- },
- {
-  "name": "Pelaihari",
-  "position": 35511445
- },
- {
   "name": "Peleng",
   "position": 12012330
  },
  {
-  "name": "Pemalang",
-  "position": 65310923
- },
- {
-  "name": "Pematangsiantar",
-  "position": 2579905
- },
- {
-  "name": "Pengalengan",
-  "position": 70910730
- },
- {
-  "name": "PenidaNusa",
-  "position": 84511530
- },
- {
-  "name": "Perabumulih",
-  "position": 32710415
- },
- {
-  "name": "Peureulak",
-  "position": 4489745
- },
- {
   "name": "Pinrang",
   "position": 34611941
- },
- {
-  "name": "Pirimapun",
-  "position": 62013824
  },
  {
   "name": "Piru",
@@ -2036,14 +944,6 @@
   "position": 4612251
  },
  {
-  "name": "Ponorogo",
-  "position": 75211127
- },
- {
-  "name": "Pontianak",
-  "position": 310915
- },
- {
   "name": "Poso",
   "position": 12012055
  },
@@ -2056,36 +956,8 @@
   "position": 83911617
  },
  {
-  "name": "Probolinggo",
-  "position": 74611313
- },
- {
   "name": "Pulau",
   "position": 55013815
- },
- {
-  "name": "Purukcahu",
-  "position": 3511435
- },
- {
-  "name": "Purwakarta",
-  "position": 63510729
- },
- {
-  "name": "Purwodadi",
-  "position": 70711055
- },
- {
-  "name": "Purwokerto",
-  "position": 72510914
- },
- {
-  "name": "PuttingTanjung",
-  "position": 33111146
- },
- {
-  "name": "Putussibau",
-  "position": 5011256
  },
  {
   "name": "Raba",
@@ -2100,32 +972,8 @@
   "position": 103712136
  },
  {
-  "name": "RajaUjung",
-  "position": 3409625
- },
- {
-  "name": "RakataPulau",
-  "position": 61010520
- },
- {
-  "name": "Rambipuji",
-  "position": 81211337
- },
- {
-  "name": "RangkasbitungS",
-  "position": 62110615
- },
- {
   "name": "Ransiki",
   "position": 13013410
- },
- {
-  "name": "Rantauprapat",
-  "position": 2159950
- },
- {
-  "name": "Rantemario",
-  "position": 31511957
  },
  {
   "name": "Rebi",
@@ -2140,14 +988,6 @@
   "position": 3010245
  },
  {
-  "name": "RiauKepulauan",
-  "position": 3010420
- },
- {
-  "name": "RiauArchRiauKepulauan",
-  "position": 3010420
- },
- {
   "name": "Romang",
   "position": 73012720
  },
@@ -2160,36 +1000,12 @@
   "position": 83512030
  },
  {
-  "name": "SabalanaKepulaunan",
-  "position": 64511850
- },
- {
-  "name": "Sailolof",
-  "position": 11513046
- },
- {
-  "name": "Salatiga",
-  "position": 71911030
- },
- {
-  "name": "SambarTanjung",
-  "position": 25911019
- },
- {
   "name": "Sambas",
   "position": 12010920
  },
  {
   "name": "Sampang",
   "position": 71111313
- },
- {
-  "name": "SangihePulau",
-  "position": 33512530
- },
- {
-  "name": "Sangkapura",
-  "position": 55211240
  },
  {
   "name": "Saonek",
@@ -2200,28 +1016,12 @@
   "position": 33312840
  },
  {
-  "name": "SaranGunung",
-  "position": 3011125
- },
- {
   "name": "Sarmi",
   "position": 14913844
  },
  {
-  "name": "Sarolangun",
-  "position": 21910242
- },
- {
   "name": "Satui",
   "position": 35011527
- },
- {
-  "name": "Saumlaki",
-  "position": 75513120
- },
- {
-  "name": "Sawahlunto",
-  "position": 4010052
  },
  {
   "name": "SawuSea",
@@ -2240,10 +1040,6 @@
   "position": 25110351
  },
  {
-  "name": "SeletanTanjung",
-  "position": 41011440
- },
- {
   "name": "Selu",
   "position": 73213055
  },
@@ -2258,10 +1054,6 @@
  {
   "name": "Sera",
   "position": 24110835
- },
- {
-  "name": "SeribuKepulauan",
-  "position": 53610633
  },
  {
   "name": "Sermata",
@@ -2284,36 +1076,8 @@
   "position": 5513115
  },
  {
-  "name": "Surabaya",
-  "position": 71711245
- },
- {
   "name": "Tahuna",
   "position": 33812530
- },
- {
-  "name": "Tanahgrogot",
-  "position": 15511615
- },
- {
-  "name": "TanimbarKepulauan",
-  "position": 73013130
- },
- {
-  "name": "Tanjungpandan",
-  "position": 24310738
- },
- {
-  "name": "Taritatu",
-  "position": 25413827
- },
- {
-  "name": "TelukBetungTanjungkarang",
-  "position": 52010510
- },
- {
-  "name": "Tenggarong",
-  "position": 2411658
  },
  {
   "name": "Tepa",
@@ -2328,16 +1092,8 @@
   "position": 33912624
  },
  {
-  "name": "Tilamuta",
-  "position": 3212223
- },
- {
   "name": "Tobelo",
   "position": 14512756
- },
- {
-  "name": "TogianKepulauan",
-  "position": 2012150
  },
  {
   "name": "Tojo",
@@ -2348,10 +1104,6 @@
   "position": 13012140
  },
  {
-  "name": "ToloTeluk",
-  "position": 22012210
- },
- {
   "name": "Tondano",
   "position": 13512454
  },
@@ -2360,20 +1112,8 @@
   "position": 53813244
  },
  {
-  "name": "UjungPandang",
-  "position": 51011920
- },
- {
   "name": "Umera",
   "position": 1212937
- },
- {
-  "name": "VanReesPegunungan",
-  "position": 23513815
- },
- {
-  "name": "Wangiwangi",
-  "position": 52212337
  },
  {
   "name": "Warkopi",
@@ -2396,20 +1136,8 @@
   "position": 24313430
  },
  {
-  "name": "Watampone",
-  "position": 42912025
- },
- {
   "name": "Wates",
   "position": 75111010
- },
- {
-  "name": "SatuataBatuata",
-  "position": 61212242
- },
- {
-  "name": "WatubelaKepulauan",
-  "position": 42813135
  },
  {
   "name": "Weda",
@@ -2440,23 +1168,11 @@
   "position": 54513428
  },
  {
-  "name": "Wonosari",
-  "position": 75811036
- },
- {
-  "name": "Wonosobo",
-  "position": 72210954
- },
- {
   "name": "Yamdena",
   "position": 74513120
  },
  {
   "name": "Yapen",
   "position": 15013610
- },
- {
-  "name": "Yogyakarta",
-  "position": 74911022
  }
 ]

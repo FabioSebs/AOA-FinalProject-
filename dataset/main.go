@@ -70,11 +70,14 @@ func Webscraper(country string) []City {
 			if len([]rune(positionStr)) >= 8 {
 				position, _ := strconv.Atoi(positionStr)
 
-				city := City{
-					Name:     name_entry,
-					Position: position,
+				if len(name_entry) < 8 {
+
+					city := City{
+						Name:     name_entry,
+						Position: position,
+					}
+					cities = append(cities, city)
 				}
-				cities = append(cities, city)
 			}
 
 		}

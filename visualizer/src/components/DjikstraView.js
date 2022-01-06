@@ -13,7 +13,7 @@ const DjikstraView = () => {
 	const search = async (e) => {
 		e.preventDefault()
 		try {
-			const response = await axios.post('http://localhost:5000/djikstra', {
+			const response = await axios.post('http://localhost:4000/djikstra', {
 				start: startNode,
 				goal: goalNode
 			})

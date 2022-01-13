@@ -107,7 +107,7 @@ func writeJSON(data []City) {
 }
 
 func main() {
-	graph.GenerateGraphNodes()
+	graph.GenerateGraph()
 	app := fiber.New()
 	app.Use(cors.New(cors.Config{
 		AllowCredentials: true,

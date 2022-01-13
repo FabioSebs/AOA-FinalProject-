@@ -7,7 +7,9 @@ import (
 	"math/rand"
 	"os"
 
-	"github.com/go-echarts/go-echarts/charts"
+	"github.com/go-echarts/go-echarts/v2/charts"
+	"github.com/go-echarts/go-echarts/v2/components"
+	"github.com/go-echarts/go-echarts/v2/opts"
 )
 
 type Node struct {
@@ -50,7 +52,6 @@ func (graph *Graph) GetValue(val string) string {
 }
 
 func (graph *Graph) Populate(array []string, limit int) {
-	fullSize := len(array)
 	for i, _ := range array {
 		//basecase
 		if i == limit {
@@ -58,13 +59,19 @@ func (graph *Graph) Populate(array []string, limit int) {
 		}
 
 		if len(graph.Nodes) == 0 {
-			i = fullSize % rand.Intn(fullSize)
 			graph.AddNode(&Node{Value: array[i]})
 		} else {
-			i = fullSize % rand.Intn(fullSize)
 			graph.AddNode(&Node{Value: array[i]})
 			graph.AddEdge(graph.Nodes[len(graph.Nodes)-2], graph.Nodes[len(graph.Nodes)-1])
 		}
+	}
+}
+
+func AddRandomEdges(graph *Graph) {
+	for i := range graph.Nodes {
+		i = rand.Intn(len(graph.Nodes) - 1)
+		x := rand.Intn(len(graph.Nodes) - 1)
+		graph.AddEdge(graph.Nodes[i], graph.Nodes[x])
 	}
 }
 
@@ -92,30 +99,31 @@ func getJson() []City {
 	return cities
 }
 
-func GenerateGraphNodes(graph *Graph) []charts.GraphNode {
-	var nodeArray = []charts.GraphNode{}
+func GenerateGraphNodes(graph *Graph) []opts.GraphNode {
+	var nodeArray = []opts.GraphNode{}
 
 	for _, v := range graph.Nodes {
-		nodeElement := charts.GraphNode{Name: graph.GetValue(v.Value)}
+		nodeElement := opts.GraphNode{Name: graph.GetValue(v.Value)}
 		nodeArray = append(nodeArray, nodeElement)
 	}
+
 	return nodeArray
 }
 
-func GenerateGraphLinks(graph *Graph) []charts.GraphLink {
-	links := make([]charts.GraphLink, 0)
+func GenerateGraphLinks(graph *Graph) []opts.GraphLink {
+	links := make([]opts.GraphLink, 0)
 	nodeArray := GenerateGraphNodes(graph)
 
 	for idx, val := range nodeArray {
 		numTarget := graph.Edges[Node{Value: val.Name}]
-		targets := []charts.GraphNode{}
+		targets := []opts.GraphNode{}
 
 		for _, v := range numTarget {
-			targets = append(targets, charts.GraphNode{Name: v.Value})
+			targets = append(targets, opts.GraphNode{Name: v.Value})
 		}
 
 		for _, v := range targets {
-			links = append(links, charts.GraphLink{Source: nodeArray[idx].Name, Target: v.Name})
+			links = append(links, opts.GraphLink{Source: nodeArray[idx].Name, Target: v.Name})
 		}
 	}
 	return links
@@ -123,8 +131,13 @@ func GenerateGraphLinks(graph *Graph) []charts.GraphLink {
 
 func edgeGraph(graph *Graph) *charts.Graph {
 	MyGraph := charts.NewGraph()
-	MyGraph.SetGlobalOptions(charts.TitleOpts{Title: "Graph of Indonesian Cities"})
-	MyGraph.Add("Nodes", GenerateGraphNodes(graph), GenerateGraphLinks(graph), charts.GraphOpts{Force: charts.GraphForce{Repulsion: 0}})
+	MyGraph.SetGlobalOptions(
+		charts.WithTitleOpts(opts.Title{Title: "Sample Graph of Indonesia"}),
+	)
+	MyGraph.AddSeries("Nodes", GenerateGraphNodes(graph), GenerateGraphLinks(graph), charts.WithGraphChartOpts(
+		opts.GraphChart{Force: &opts.GraphForce{Repulsion: 100}},
+	),
+	)
 	return MyGraph
 }
 
@@ -137,14 +150,19 @@ func GenerateGraph() {
 	}
 
 	var testGraph Graph
-	testGraph.Populate(data, 30)
+	testGraph.Populate(data, 20)
+	AddRandomEdges(&testGraph)
 
 	mygraph := edgeGraph(&testGraph)
+
+	page := components.NewPage()
+
+	page.AddCharts(mygraph)
 
 	f1, err := os.Create("graph.html")
 	if err != nil {
 		panic(err)
 	}
 
-	mygraph.Render(io.MultiWriter(f1))
+	page.Render(io.MultiWriter(f1))
 }

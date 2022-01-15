@@ -84,6 +84,12 @@ if __name__ == '__main__':
     for key, value in cost_so_far.items():
         print(key.data, '->', value)
 
+    print()
+    for key, value in came_from.items():
+        print(key.data, ':', value.data if value is not None else None)
+    print()
+    print(cost_so_far)
+
 
 # dataclass is a library from python that generates a class constructor for you and can define a class with the dataclass decorator
 # field is for default variables within the dataclass

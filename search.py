@@ -1,6 +1,6 @@
 import numpy as np
 from queue import PriorityQueue
-
+from astar import a_star_search
 
 def DjikstraSearch(map, startNode, goalNode):
     # Variables
@@ -57,4 +57,5 @@ def DjikstraSearch(map, startNode, goalNode):
 
 
 def AStar(map, startNode, goalNode):
-    return "TBD"
+    came_from, cost_so_far = a_star_search(map, startNode, goalNode) 
+    return {"distance" : cost_so_far[-1], "visited" : came_from}

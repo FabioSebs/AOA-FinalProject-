@@ -1,2766 +1,1178 @@
 [
-    {
-        "name": "",
-        "position": ""
-    },
-    {
-        "name": "Aceh",
-        "position": "04159730"
-    },
-    {
-        "name": "Adaut",
-        "position": "080813107"
-    },
-    {
-        "name": "Adi",
-        "position": "041513330"
-    },
-    {
-        "name": "Adonara",
-        "position": "081512305"
-    },
-    {
-        "name": "Adua",
-        "position": "014512950"
-    },
-    {
-        "name": "Agats",
-        "position": "053313800"
-    },
-    {
-        "name": "AgungGunung",
-        "position": "082011528"
-    },
-    {
-        "name": "Aimere",
-        "position": "084512103"
-    },
-    {
-        "name": "Akelamo",
-        "position": "013512940"
-    },
-    {
-        "name": "Alor",
-        "position": "081512430"
-    },
-    {
-        "name": "Alusi",
-        "position": "073513140"
-    },
-    {
-        "name": "Amahai",
-        "position": "032012855"
-    },
-    {
-        "name": "Amamapare",
-        "position": "045313638"
-    },
-    {
-        "name": "Ambon",
-        "position": "034312812"
-    },
-    {
-        "name": "Ampanan",
-        "position": "083411604"
-    },
-    {
-        "name": "Amuntai",
-        "position": "022811525"
-    },
-    {
-        "name": "Amurang",
-        "position": "010512440"
-    },
-    {
-        "name": "AnambasKepulauan",
-        "position": "032010630"
-    },
-    {
-        "name": "Ansudu",
-        "position": "021113922"
-    },
-    {
-        "name": "AnyerKidul",
-        "position": "060410553"
-    },
-    {
-        "name": "Arjuna",
-        "position": "074911234"
-    },
-    {
-        "name": "AruKepulauan",
-        "position": "060013430"
-    },
-    {
-        "name": "AruIsAruKepulauan",
-        "position": "060013430"
-    },
-    {
-        "name": "AsiaKepulauan",
-        "position": "010013113"
-    },
-    {
-        "name": "Auponhia",
-        "position": "015812527"
-    },
-    {
-        "name": "AyuKepulauan",
-        "position": "003513105"
-    },
-    {
-        "name": "Baa",
-        "position": "105012300"
-    },
-    {
-        "name": "Babar",
-        "position": "080012930"
-    },
-    {
-        "name": "Babo",
-        "position": "023013330"
-    },
-    {
-        "name": "BacanKepulauan",
-        "position": "003512730"
-    },
-    {
-        "name": "BadasKepulauan",
-        "position": "004510705"
-    },
-    {
-        "name": "Bade",
-        "position": "071013935"
-    },
-    {
-        "name": "Bagansiapiapi",
-        "position": "021210050"
-    },
-    {
-        "name": "Baing",
-        "position": "101412034"
-    },
-    {
-        "name": "BalabalanganKepulauan",
-        "position": "022011730"
-    },
-    {
-        "name": "Bali",
-        "position": "082011500"
-    },
-    {
-        "name": "Bali",
-        "position": "082011500"
-    },
-    {
-        "name": "BaliSelat",
-        "position": "081811425"
-    },
-    {
-        "name": "Balikpapan",
-        "position": "011011655"
-    },
-    {
-        "name": "BandaKepulauan",
-        "position": "043712950"
-    },
-    {
-        "name": "BandaAceh",
-        "position": "05359520"
-    },
-    {
-        "name": "Band",
-        "position": ""
-    },
-    {
-        "name": "lat",
-        "position": "054013305"
-    },
-    {
-        "name": "BandaIsBandaKepulauan",
-        "position": "043712950"
-    },
-    {
-        "name": "BandaSea",
-        "position": "060013000"
-    },
-    {
-        "name": "Bandanaira",
-        "position": "043212954"
-    },
-    {
-        "name": "Bandung",
-        "position": "065410736"
-    },
-    {
-        "name": "Banggai",
-        "position": "013412330"
-    },
-    {
-        "name": "BanggaiKepulauan",
-        "position": "014012330"
-    },
-    {
-        "name": "BanggaiArchBanggaiKepulauan",
-        "position": "014012330"
-    },
-    {
-        "name": "BangkaSulawesi",
-        "position": "015012505"
-    },
-    {
-        "name": "BangkaSumatera",
-        "position": "020010550"
-    },
-    {
-        "name": "BangkaSelat",
-        "position": "023010530"
-    },
-    {
-        "name": "Bangkalan",
-        "position": "070211246"
-    },
-    {
-        "name": "Bangkinang",
-        "position": "001810105"
-    },
-    {
-        "name": "Bangko",
-        "position": "020510209"
-    },
-    {
-        "name": "Banjarmasin",
-        "position": "032011435"
-    },
-    {
-        "name": "Bantaeng",
-        "position": "053211956"
-    },
-    {
-        "name": "Bantul",
-        "position": "075511019"
-    },
-    {
-        "name": "BanyakKepulauan",
-        "position": "02109710"
-    },
-    {
-        "name": "Banyumas",
-        "position": "073210918"
-    },
-    {
-        "name": "Banyuwangi",
-        "position": "081311421"
-    },
-    {
-        "name": "Barabai",
-        "position": "023211534"
-    },
-    {
-        "name": "Barapasi",
-        "position": "021513705"
-    },
-    {
-        "name": "BaratDayaKepulauan",
-        "position": "073012800"
-    },
-    {
-        "name": "BarisanBukit",
-        "position": "033010215"
-    },
-    {
-        "name": "Barito",
-        "position": "040011450"
-    },
-    {
-        "name": "Batang",
-        "position": "065510945"
-    },
-    {
-        "name": "Batanta",
-        "position": "005513040"
-    },
-    {
-        "name": "BatuKapulauan",
-        "position": "00309825"
-    },
-    {
-        "name": "BatuIsBatuKepulauan",
-        "position": "00309825"
-    },
-    {
-        "name": "Batuata",
-        "position": "061212242"
-    },
-    {
-        "name": "Baturaja",
-        "position": "041110415"
-    },
-    {
-        "name": "Baubau",
-        "position": "052512238"
-    },
-    {
-        "name": "Bawean",
-        "position": "054611235"
-    },
-    {
-        "name": "Belawan",
-        "position": "03339832"
-    },
-    {
-        "name": "Belinyu",
-        "position": "013510550"
-    },
-    {
-        "name": "BelitonIsBelitung",
-        "position": "031010750"
-    },
-    {
-        "name": "Belitung",
-        "position": "031010750"
-    },
-    {
-        "name": "Bangkalis",
-        "position": "013010210"
-    },
-    {
-        "name": "Bengkulu",
-        "position": "035010212"
-    },
-    {
-        "name": "Bengkulu",
-        "position": "034810216"
-    },
-    {
-        "name": "Benteng",
-        "position": "061012030"
-    },
-    {
-        "name": "Beo",
-        "position": "042512650"
-    },
-    {
-        "name": "BerauTeluk",
-        "position": "023013230"
-    },
-    {
-        "name": "Berebere",
-        "position": "022512845"
-    },
-    {
-        "name": "BerhalaSelat",
-        "position": "010010415"
-    },
-    {
-        "name": "Besar",
-        "position": "024011600"
-    },
-    {
-        "name": "Biak",
-        "position": "011013606"
-    },
-    {
-        "name": "Biaro",
-        "position": "020512526"
-    },
-    {
-        "name": "BillitonIsBelitung",
-        "position": "031010750"
-    },
-    {
-        "name": "Bima",
-        "position": "082211849"
-    },
-    {
-        "name": "Binjai",
-        "position": "03209830"
-    },
-    {
-        "name": "Binongko",
-        "position": "055712402"
-    },
-    {
-        "name": "Bintan",
-        "position": "010010400"
-    },
-    {
-        "name": "Bintuni",
-        "position": "020713332"
-    },
-    {
-        "name": "Bireuen",
-        "position": "05149639"
-    },
-    {
-        "name": "Bisa",
-        "position": "011512728"
-    },
-    {
-        "name": "Biltar",
-        "position": "080511211"
-    },
-    {
-        "name": "Blora",
-        "position": "065711125"
-    },
-    {
-        "name": "Bogor",
-        "position": "063610648"
-    },
-    {
-        "name": "Bojonegoro",
-        "position": "071111154"
-    },
-    {
-        "name": "Bondowoso",
-        "position": "075511349"
-    },
-    {
-        "name": "BoneTeluk",
-        "position": "041012050"
-    },
-    {
-        "name": "Bonerate",
-        "position": "072512105"
-    },
-    {
-        "name": "BonerateKepulauan",
-        "position": "063012110"
-    },
-    {
-        "name": "Bonoi",
-        "position": "014513741"
-    },
-    {
-        "name": "Bontang",
-        "position": "001011730"
-    },
-    {
-        "name": "Bosnik",
-        "position": "010513610"
-    },
-    {
-        "name": "Boyolali",
-        "position": "073211035"
-    },
-    {
-        "name": "Brebes",
-        "position": "065210903"
-    },
-    {
-        "name": "Buapinang",
-        "position": "044012130"
-    },
-    {
-        "name": "BugelTanjung",
-        "position": "062611103"
-    },
-    {
-        "name": "Bukittinggi",
-        "position": "002010020"
-    },
-    {
-        "name": "Bula",
-        "position": "030613030"
-    },
-    {
-        "name": "BuliTeluk",
-        "position": "004812825"
-    },
-    {
-        "name": "Bulukumba",
-        "position": "055312011"
-    },
-    {
-        "name": "Buntok",
-        "position": "014011458"
-    },
-    {
-        "name": "Bunyu",
-        "position": "033511750"
-    },
-    {
-        "name": "Buol",
-        "position": "011512132"
-    },
-    {
-        "name": "Buru",
-        "position": "033012630"
-    },
-    {
-        "name": "Buton",
-        "position": "050012245"
-    },
-    {
-        "name": "ButungButon",
-        "position": "050012245"
-    },
-    {
-        "name": "Calang",
-        "position": "04379537"
-    },
-    {
-        "name": "CaremeCiremai",
-        "position": "065510827"
-    },
-    {
-        "name": "CelebesSea",
-        "position": "030012300"
-    },
-    {
-        "name": "CenderwasihTeluk",
-        "position": "030013520"
-    },
-    {
-        "name": "Cepu",
-        "position": "070911135"
-    },
-    {
-        "name": "CeramSeram",
-        "position": "031012900"
-    },
-    {
-        "name": "CeramSeaSeramSea",
-        "position": "023012830"
-    },
-    {
-        "name": "Ciamis",
-        "position": "072010821"
-    },
-    {
-        "name": "Cijanjur",
-        "position": "064910708"
-    },
-    {
-        "name": "Cijulang",
-        "position": "074210827"
-    },
-    {
-        "name": "Cilacap",
-        "position": "074310900"
-    },
-    {
-        "name": "Cirebon",
-        "position": "064510832"
-    },
-    {
-        "name": "Ciremai",
-        "position": "065510827"
-    },
-    {
-        "name": "Curup",
-        "position": "042610213"
-    },
-    {
-        "name": "DaboPasirkuning",
-        "position": "003010433"
-    },
-    {
-        "name": "Damar",
-        "position": "070712840"
-    },
-    {
-        "name": "DampierSelat",
-        "position": "004013100"
-    },
-    {
-        "name": "Dana",
-        "position": "110012252"
-    },
-    {
-        "name": "DanauPoso",
-        "position": "015212035"
-    },
-    {
-        "name": "DatuTanjung",
-        "position": "020510939"
-    },
-    {
-        "name": "DatukTanjongDatuTanjung",
-        "position": "020510939"
-    },
-    {
-        "name": "Demak",
-        "position": "065311038"
-    },
-    {
-        "name": "Dempo",
-        "position": "040210315"
-    },
-    {
-        "name": "Dendang",
-        "position": "030710756"
-    },
-    {
-        "name": "Denpasar",
-        "position": "083911513"
-    },
-    {
-        "name": "Digul",
-        "position": "070713842"
-    },
-    {
-        "name": "DjakartaJakarta",
-        "position": "060910649"
-    },
-    {
-        "name": "DjawaJawa",
-        "position": "070011000"
-    },
-    {
-        "name": "DoberaiJazirah",
-        "position": "012513300"
-    },
-    {
-        "name": "Dobo",
-        "position": "44461804"
-    },
-    {
-        "name": "Doi",
-        "position": "021412749"
-    },
-    {
-        "name": "DolakPulau",
-        "position": "080013830"
-    },
-    {
-        "name": "DondoTeluk",
-        "position": "005012030"
-    },
-    {
-        "name": "Donggala",
-        "position": "003011940"
-    },
-    {
-        "name": "Dumai",
-        "position": "013510128"
-    },
-    {
-        "name": "DUrvilleTanjung",
-        "position": "012813754"
-    },
-    {
-        "name": "E",
-        "position": ""
-    },
-    {
-        "name": "liase",
-        "position": "082113048"
-    },
-    {
-        "name": "E",
-        "position": ""
-    },
-    {
-        "name": "narotali",
-        "position": "035513621"
-    },
-    {
-        "name": "E",
-        "position": ""
-    },
-    {
-        "name": "nde",
-        "position": "084512140"
-    },
-    {
-        "name": "E",
-        "position": ""
-    },
-    {
-        "name": "nggano",
-        "position": "052010240"
-    },
-    {
-        "name": "Fakfak",
-        "position": "025513218"
-    },
-    {
-        "name": "FatagarTanjun",
-        "position": "024613157"
-    },
-    {
-        "name": "FlamingoTeluk",
-        "position": "053013800"
-    },
-    {
-        "name": "FleskoTanjung",
-        "position": "002912430"
-    },
-    {
-        "name": "Flores",
-        "position": "083512100"
-    },
-    {
-        "name": "FloresSea",
-        "position": "063012000"
-    },
-    {
-        "name": "Fluk",
-        "position": "014212744"
-    },
-    {
-        "name": "Galela",
-        "position": "015012749"
-    },
-    {
-        "name": "anedidalemGani",
-        "position": "004812814"
-    },
-    {
-        "name": "Gani",
-        "position": "004812814"
-    },
-    {
-        "name": "GanyemGenyem",
-        "position": "024614012"
-    },
-    {
-        "name": "Garut",
-        "position": "071410753"
-    },
-    {
-        "name": "Gebe",
-        "position": "000512925"
-    },
-    {
-        "name": "GeelvinkBCenderwasihTeluk",
-        "position": "030013520"
-    },
-    {
-        "name": "Genteng",
-        "position": "072210624"
-    },
-    {
-        "name": "Genyem",
-        "position": "024614012"
-    },
-    {
-        "name": "Geser",
-        "position": "035013054"
-    },
-    {
-        "name": "Gomogomo",
-        "position": "063913443"
-    },
-    {
-        "name": "GorongKepulauan",
-        "position": "035913125"
-    },
-    {
-        "name": "Gorontalo",
-        "position": "003512305"
-    },
-    {
-        "name": "GreatSangiSangihePulau",
-        "position": "033512530"
-    },
-    {
-        "name": "GreaterSundaIs",
-        "position": "070011200"
-    },
-    {
-        "name": "Gresik",
-        "position": "071311238"
-    },
-    {
-        "name": "GuhakolakTanjung",
-        "position": "065010514"
-    },
-    {
-        "name": "Gumzai",
-        "position": "052813442"
-    },
-    {
-        "name": "Gunungapi",
-        "position": "064512630"
-    },
-    {
-        "name": "Gunungsitoli",
-        "position": "01159730"
-    },
-    {
-        "name": "Halmahera",
-        "position": "004012800"
-    },
-    {
-        "name": "Har",
-        "position": "051613314"
-    },
-    {
-        "name": "Hari",
-        "position": "011610405"
-    },
-    {
-        "name": "HayaTehoru",
-        "position": "032312930"
-    },
-    {
-        "name": "HollandiaJayapura",
-        "position": "022814038"
-    },
-    {
-        "name": "Ibonma",
-        "position": "032913331"
-    },
-    {
-        "name": "Ibu",
-        "position": "013512733"
-    },
-    {
-        "name": "Idi",
-        "position": "05029737"
-    },
-    {
-        "name": "Ilwaki",
-        "position": "075512630"
-    },
-    {
-        "name": "Inanwatan",
-        "position": "020813210"
-    },
-    {
-        "name": "Indramayu",
-        "position": "062010819"
-    },
-    {
-        "name": "IrianJaya",
-        "position": "0401370"
-    },
-    {
-        "name": "Jailolo",
-        "position": "010512730"
-    },
-    {
-        "name": "JailoloSelat",
-        "position": "000512905"
-    },
-    {
-        "name": "Jakarta",
-        "position": "060910649"
-    },
-    {
-        "name": "Jambi",
-        "position": "013810330"
-    },
-    {
-        "name": "Jambi",
-        "position": "013010230"
-    },
-    {
-        "name": "JapenYapen",
-        "position": "015013600"
-    },
-    {
-        "name": "Jatibarang",
-        "position": "062810818"
-    },
-    {
-        "name": "Jatinegara",
-        "position": "061310652"
-    },
-    {
-        "name": "JavaJawa",
-        "position": "070011000"
-    },
-    {
-        "name": "JavaBarat",
-        "position": "070010700"
-    },
-    {
-        "name": "JavaSea",
-        "position": "043510715"
-    },
-    {
-        "name": "JavaTengah",
-        "position": "070011000"
-    },
-    {
-        "name": "JavaTimur",
-        "position": "080011300"
-    },
-    {
-        "name": "Jawa",
-        "position": "070011000"
-    },
-    {
-        "name": "JayaPuncak",
-        "position": "035713717"
-    },
-    {
-        "name": "Jayapura",
-        "position": "022814038"
-    },
-    {
-        "name": "JayawijayaPegunungan",
-        "position": "050013900"
-    },
-    {
-        "name": "Jemaja",
-        "position": "030510545"
-    },
-    {
-        "name": "Jember",
-        "position": "081111341"
-    },
-    {
-        "name": "Jepara",
-        "position": "360814201"
-    },
-    {
-        "name": "JogjakartaYogyakarta",
-        "position": "074911022"
-    },
-    {
-        "name": "Jombang",
-        "position": "073311214"
-    },
-    {
-        "name": "Jorong",
-        "position": "035811456"
-    },
-    {
-        "name": "Kabaena",
-        "position": "051512200"
-    },
-    {
-        "name": "Kabanjahe",
-        "position": "03069830"
-    },
-    {
-        "name": "Kaburuang",
-        "position": "035012630"
-    },
-    {
-        "name": "Kahayan",
-        "position": "034011400"
-    },
-    {
-        "name": "KaiKapulauan",
-        "position": "055513245"
-    },
-    {
-        "name": "KaiBesar",
-        "position": "053513300"
-    },
-    {
-        "name": "KaiIsKaiKepulauan",
-        "position": "055513245"
-    },
-    {
-        "name": "KaiKecil",
-        "position": "054513240"
-    },
-    {
-        "name": "Kaimana",
-        "position": "033913345"
-    },
-    {
-        "name": "Kaironi",
-        "position": "004713340"
-    },
-    {
-        "name": "Kalabahi",
-        "position": "081312431"
-    },
-    {
-        "name": "Kalao",
-        "position": "072112100"
-    },
-    {
-        "name": "Kalaotoa",
-        "position": "072012150"
-    },
-    {
-        "name": "Kalianda",
-        "position": "055010545"
-    },
-    {
-        "name": "Kalimantan",
-        "position": "050011400"
-    },
-    {
-        "name": "KalimantanBarat",
-        "position": "030011030"
-    },
-    {
-        "name": "KalimantanSelatan",
-        "position": "023011530"
-    },
-    {
-        "name": "KalimantanTengah",
-        "position": "020011330"
-    },
-    {
-        "name": "KalimantanTimur",
-        "position": "013011630"
-    },
-    {
-        "name": "Kampar",
-        "position": "003010308"
-    },
-    {
-        "name": "KampungbaruTolitoli",
-        "position": "010512050"
-    },
-    {
-        "name": "KamrauTeluk",
-        "position": "033013336"
-    },
-    {
-        "name": "Kandangan",
-        "position": "025011520"
-    },
-    {
-        "name": "Kandanghaur",
-        "position": "062110806"
-    },
-    {
-        "name": "KangeanKeppulauan",
-        "position": "065511523"
-    },
-    {
-        "name": "KangeanIsKangeanKepulauan",
-        "position": "065511523"
-    },
-    {
-        "name": "Kapuas",
-        "position": "002510920"
-    },
-    {
-        "name": "Karakelong",
-        "position": "043512650"
-    },
-    {
-        "name": "Karakitang",
-        "position": "031412528"
-    },
-    {
-        "name": "Karambu",
-        "position": "035311606"
-    },
-    {
-        "name": "Karanganyar",
-        "position": "073810937"
-    },
-    {
-        "name": "Karawang",
-        "position": "063010715"
-    },
-    {
-        "name": "KarimataKepulauan",
-        "position": "012510900"
-    },
-    {
-        "name": "KarimataSelat",
-        "position": "020010840"
-    },
-    {
-        "name": "KarimataIsKarimataKepulauan",
-        "position": "012510900"
-    },
-    {
-        "name": "KarimunjawaKepulauan",
-        "position": "055011030"
-    },
-    {
-        "name": "Karufa",
-        "position": "035013320"
-    },
-    {
-        "name": "Kasiruta",
-        "position": "002512712"
-    },
-    {
-        "name": "KatinganMendawai",
-        "position": "033011300"
-    },
-    {
-        "name": "Kawasi",
-        "position": "013812728"
-    },
-    {
-        "name": "KawioKepulauan",
-        "position": "043012530"
-    },
-    {
-        "name": "Kayan",
-        "position": "025511735"
-    },
-    {
-        "name": "Kayeli",
-        "position": "032012710"
-    },
-    {
-        "name": "Kayoa",
-        "position": "000112728"
-    },
-    {
-        "name": "Kebumen",
-        "position": "074210940"
-    },
-    {
-        "name": "Kediri",
-        "position": "075111201"
-    },
-    {
-        "name": "Kafamenanu",
-        "position": "092812429"
-    },
-    {
-        "name": "Kema",
-        "position": "012212508"
-    },
-    {
-        "name": "Kendal",
-        "position": "065611014"
-    },
-    {
-        "name": "Kendari",
-        "position": "035012230"
-    },
-    {
-        "name": "Kendawangan",
-        "position": "023211017"
-    },
-    {
-        "name": "Kepi",
-        "position": "063213919"
-    },
-    {
-        "name": "Kerinci",
-        "position": "014010115"
-    },
-    {
-        "name": "Ketapang",
-        "position": "015511000"
-    },
-    {
-        "name": "Kimaam",
-        "position": "075813853"
-    },
-    {
-        "name": "Kisar",
-        "position": "080512710"
-    },
-    {
-        "name": "Klamono",
-        "position": "010813130"
-    },
-    {
-        "name": "Koba",
-        "position": "063713437"
-    },
-    {
-        "name": "Kofiau",
-        "position": "011112950"
-    },
-    {
-        "name": "Kokas",
-        "position": "024213226"
-    },
-    {
-        "name": "Kola",
-        "position": "053513430"
-    },
-    {
-        "name": "Kolaka",
-        "position": "040312146"
-    },
-    {
-        "name": "KolepomDolakPulau",
-        "position": "080013830"
-    },
-    {
-        "name": "Kolonodale",
-        "position": "020012119"
-    },
-    {
-        "name": "Komodo",
-        "position": "083711920"
-    },
-    {
-        "name": "KomoranPulau",
-        "position": "081813845"
-    },
-    {
-        "name": "Kotaagung",
-        "position": "053810429"
-    },
-    {
-        "name": "Kotabaru",
-        "position": "032011620"
-    },
-    {
-        "name": "Kotabumi",
-        "position": "044910454"
-    },
-    {
-        "name": "Kotamobagu",
-        "position": "005712431"
-    },
-    {
-        "name": "Kragan",
-        "position": "064311138"
-    },
-    {
-        "name": "KrakatauRakataPulau",
-        "position": "061010520"
-    },
-    {
-        "name": "KrakatoaRakataPulau",
-        "position": "061010520"
-    },
-    {
-        "name": "Krau",
-        "position": "031914005"
-    },
-    {
-        "name": "Kualajelai",
-        "position": "025811046"
-    },
-    {
-        "name": "Kualakapuas",
-        "position": "025511420"
-    },
-    {
-        "name": "Kualakurun",
-        "position": "011011350"
-    },
-    {
-        "name": "Kualapembuang",
-        "position": "031411238"
-    },
-    {
-        "name": "Kualasimpang",
-        "position": "04179803"
-    },
-    {
-        "name": "Kuandang",
-        "position": "005612301"
-    },
-    {
-        "name": "Kudus",
-        "position": "064811051"
-    },
-    {
-        "name": "Kumai",
-        "position": "024411143"
-    },
-    {
-        "name": "KumambaKepulauan",
-        "position": "013613845"
-    },
-    {
-        "name": "Kuningan",
-        "position": "065910829"
-    },
-    {
-        "name": "Kupang",
-        "position": "101912339"
-    },
-    {
-        "name": "KutarajaBandaAceh",
-        "position": "05359520"
-    },
-    {
-        "name": "Kwatisore",
-        "position": "031813450"
-    },
-    {
-        "name": "Kwoka",
-        "position": "003113227"
-    },
-    {
-        "name": "Labuha",
-        "position": "003012730"
-    },
-    {
-        "name": "Labuhan",
-        "position": "062210550"
-    },
-    {
-        "name": "Labuhanbajo",
-        "position": "082811954"
-    },
-    {
-        "name": "Lahat",
-        "position": "034510330"
-    },
-    {
-        "name": "Lahewa",
-        "position": "01229712"
-    },
-    {
-        "name": "Lakor",
-        "position": "081512817"
-    },
-    {
-        "name": "Lampung",
-        "position": "053010430"
-    },
-    {
-        "name": "Langsa",
-        "position": "04309757"
-    },
-    {
-        "name": "Larantuka",
-        "position": "082112255"
-    },
-    {
-        "name": "Larat",
-        "position": "070013200"
-    },
-    {
-        "name": "Lariang",
-        "position": "012611917"
-    },
-    {
-        "name": "Laut",
-        "position": "044510800"
-    },
-    {
-        "name": "LautPulau",
-        "position": "034011610"
-    },
-    {
-        "name": "LautKecilKepulauan",
-        "position": "044511540"
-    },
-    {
-        "name": "Lawele",
-        "position": "051312257"
-    },
-    {
-        "name": "Lawu",
-        "position": "074011113"
-    },
-    {
-        "name": "Lenmalu",
-        "position": "014513015"
-    },
-    {
-        "name": "LesserSundaIs",
-        "position": "080012000"
-    },
-    {
-        "name": "LetiKepulauan",
-        "position": "081012800"
-    },
-    {
-        "name": "LetiIsLetiKepulauan",
-        "position": "081012800"
-    },
-    {
-        "name": "Letong",
-        "position": "025810542"
-    },
-    {
-        "name": "LeuserG",
-        "position": "03469712"
-    },
-    {
-        "name": "LhokkruetIndonesia",
-        "position": "04559524"
-    },
-    {
-        "name": "LhokseumaweIndonesia",
-        "position": "05109710"
-    },
-    {
-        "name": "LiangpranIndonesia",
-        "position": "010411423"
-    },
-    {
-        "name": "LiboboTanjung",
-        "position": "05412828"
-    },
-    {
-        "name": "Lima",
-        "position": "033912758"
-    },
-    {
-        "name": "Liman",
-        "position": "074811145"
-    },
-    {
-        "name": "Lingga",
-        "position": "01210437"
-    },
-    {
-        "name": "",
-        "position": ""
-    },
-    {
-        "name": "LinggaKepulauan",
-        "position": "01010430"
-    },
-    {
-        "name": "LinggaArchLinggaKepulauan",
-        "position": "01010430"
-    },
-    {
-        "name": "LittleLautIsLautKecilKepulauan",
-        "position": "044511540"
-    },
-    {
-        "name": "LiukangTenggajaSabalanaKepulauan",
-        "position": "064511850"
-    },
-    {
-        "name": "LojiKasasi",
-        "position": "013812728"
-    },
-    {
-        "name": "Lomblen",
-        "position": "083012332"
-    },
-    {
-        "name": "Lombok",
-        "position": "084511630"
-    },
-    {
-        "name": "Lomppbatang",
-        "position": "052411956"
-    },
-    {
-        "name": "Longiram",
-        "position": "00511545"
-    },
-    {
-        "name": "Longnawan",
-        "position": "015111455"
-    },
-    {
-        "name": "Lubukinggau",
-        "position": "031510255"
-    },
-    {
-        "name": "Lubuksikaping",
-        "position": "01010015"
-    },
-    {
-        "name": "Lumajang",
-        "position": "080811313"
-    },
-    {
-        "name": "LumutTanjung",
-        "position": "035010558"
-    },
-    {
-        "name": "Luwuk",
-        "position": "05612247"
-    },
-    {
-        "name": "MadiuM",
-        "position": "073811132"
-    },
-    {
-        "name": "Madura",
-        "position": "07301140"
-    },
-    {
-        "name": "MaduraSelat",
-        "position": "073011320"
-    },
-    {
-        "name": "Megelang",
-        "position": "072911013"
-    },
-    {
-        "name": "MahakaM",
-        "position": "03511717"
-    },
-    {
-        "name": "Majalengka",
-        "position": "065010813"
-    },
-    {
-        "name": "Majene",
-        "position": "065010813"
-    },
-    {
-        "name": "Makale",
-        "position": "030611951"
-    },
-    {
-        "name": "MakasarUjungPandang",
-        "position": "051011920"
-    },
-    {
-        "name": "MakasarSelat",
-        "position": "01011820"
-    },
-    {
-        "name": "MakasarstrOfMakasarSelat",
-        "position": "01011820"
-    },
-    {
-        "name": "Makian",
-        "position": "02012720"
-    },
-    {
-        "name": "MalaccaStrOf",
-        "position": "0301010"
-    },
-    {
-        "name": "Malamala",
-        "position": "032112055"
-    },
-    {
-        "name": "Maliku",
-        "position": "03912316"
-    },
-    {
-        "name": "Malili",
-        "position": "024212106"
-    },
-    {
-        "name": "Malino",
-        "position": "0101210"
-    },
-    {
-        "name": "Maluku",
-        "position": "0101270"
-    },
-    {
-        "name": "Maluku",
-        "position": "0301280"
-    },
-    {
-        "name": "MalukuSeaMoluccaSe",
-        "position": "001250"
-    },
-    {
-        "name": "Mamasa",
-        "position": "025511920"
-    },
-    {
-        "name": "Mabberamo",
-        "position": "02013750"
-    },
-    {
-        "name": "Mamuju",
-        "position": "024111850"
-    },
-    {
-        "name": "Manado",
-        "position": "012912451"
-    },
-    {
-        "name": "MandalaPuncak",
-        "position": "044414020"
-    },
-    {
-        "name": "MandarTeluk",
-        "position": "033511915"
-    },
-    {
-        "name": "Mandioli",
-        "position": "04012720"
-    },
-    {
-        "name": "Manggar",
-        "position": "025010810"
-    },
-    {
-        "name": "Manggawitu",
-        "position": "040813332"
-    },
-    {
-        "name": "MangkalihatTanjung",
-        "position": "010211859"
-    },
-    {
-        "name": "Mangole",
-        "position": "015012555"
-    },
-    {
-        "name": "Manna",
-        "position": "042510255"
-    },
-    {
-        "name": "Manokwari",
-        "position": "0541340"
-    },
-    {
-        "name": "Manui",
-        "position": "033512305"
-    },
-    {
-        "name": "MaokePegunungan",
-        "position": "034013730"
-    },
-    {
-        "name": "MapiaKepulauan",
-        "position": "05013420"
-    },
-    {
-        "name": "Maratua",
-        "position": "021011835"
-    },
-    {
-        "name": "MartapuraKalimantan",
-        "position": "032211447"
-    },
-    {
-        "name": "MartapuraSumatera",
-        "position": "041610422"
-    },
-    {
-        "name": "MasaleMboKepulauan",
-        "position": "053511430"
-    },
-    {
-        "name": "MasalimaKepulauan",
-        "position": "050411705"
-    },
-    {
-        "name": "Masamba",
-        "position": "023012015"
-    },
-    {
-        "name": "Masela",
-        "position": "080912951"
-    },
-    {
-        "name": "MashoiAmahai",
-        "position": "032012855"
-    },
-    {
-        "name": "Matak",
-        "position": "031810616"
-    },
-    {
-        "name": "Mataram",
-        "position": "083511607"
-    },
-    {
-        "name": "Mayu",
-        "position": "013012630"
-    },
-    {
-        "name": "Mayu",
-        "position": "013012630"
-    },
-    {
-        "name": "Medan",
-        "position": "03409838"
-    },
-    {
-        "name": "Mekongga",
-        "position": "033912115"
-    },
-    {
-        "name": "Melolo",
-        "position": "095312040"
-    },
-    {
-        "name": "Memboro",
-        "position": "093011930"
-    },
-    {
-        "name": "Mempawah",
-        "position": "03010905"
-    },
-    {
-        "name": "Mendawai",
-        "position": "03301130"
-    },
-    {
-        "name": "Menggala",
-        "position": "0430105415"
-    },
-    {
-        "name": "MentawaiKepulauan",
-        "position": "020990"
-    },
-    {
-        "name": "Merak",
-        "position": "061010626"
-    },
-    {
-        "name": "Merauke",
-        "position": "082914024"
-    },
-    {
-        "name": "Meulaboh",
-        "position": "04119603"
-    },
-    {
-        "name": "Meureudu",
-        "position": "05199610"
-    },
-    {
-        "name": "Midai",
-        "position": "001500"
-    },
-    {
-        "name": "mindiptana",
-        "position": "055514022"
-    },
-    {
-        "name": "Misool",
-        "position": "015213010"
-    },
-    {
-        "name": "Mao",
-        "position": "0801280"
-    },
-    {
-        "name": "Mojokerto",
-        "position": "072811226"
-    },
-    {
-        "name": "Molu",
-        "position": "064513140"
-    },
-    {
-        "name": "MoluccsSea",
-        "position": "06451250"
-    },
-    {
-        "name": "MoluccasMaluku",
-        "position": "0101270"
-    },
-    {
-        "name": "Mondego",
-        "position": "033412209"
-    },
-    {
-        "name": "Monse",
-        "position": "040712315"
-    },
-    {
-        "name": "Morotai",
-        "position": "021012830"
-    },
-    {
-        "name": "Moutong",
-        "position": "02812113"
-    },
-    {
-        "name": "Moya",
-        "position": "081011740"
-    },
-    {
-        "name": "Muarabungo",
-        "position": "012810252"
-    },
-    {
-        "name": "Muaraenim",
-        "position": "034010350"
-    },
-    {
-        "name": "Muarajuloi",
-        "position": "01211403"
-    },
-    {
-        "name": "Murakaman",
-        "position": "00211645"
-    },
-    {
-        "name": "Muaratebo",
-        "position": "013010226"
-    },
-    {
-        "name": "Muaratembesi",
-        "position": "014210308"
-    },
-    {
-        "name": "Muaratewe",
-        "position": "05811452"
-    },
-    {
-        "name": "MuburPulau",
-        "position": "032010612"
-    },
-    {
-        "name": "Mukomuko",
-        "position": "023010110"
-    },
-    {
-        "name": "MullerPegunungan",
-        "position": "03011330"
-    },
-    {
-        "name": "Muna",
-        "position": "05012230"
-    },
-    {
-        "name": "Muntok",
-        "position": "020510510"
-    },
-    {
-        "name": "Muria",
-        "position": "063611053"
-    },
-    {
-        "name": "Musi",
-        "position": "022010456"
-    },
-    {
-        "name": "Muting",
-        "position": "072314020"
-    },
-    {
-        "name": "Nabire",
-        "position": "031513526"
-    },
-    {
-        "name": "Namber",
-        "position": "010213449"
-    },
-    {
-        "name": "Namlea",
-        "position": "031812705"
-    },
-    {
-        "name": "Namrole",
-        "position": "034612646"
-    },
-    {
-        "name": "Nangapinoh",
-        "position": "02011144"
-    },
-    {
-        "name": "Nangatayap",
-        "position": "013211034"
-    },
-    {
-        "name": "NanusaKepulauan",
-        "position": "044512701"
-    },
-    {
-        "name": "Natal",
-        "position": "0359907"
-    },
-    {
-        "name": "NatunaBesarKepulauan",
-        "position": "04010815"
-    },
-    {
-        "name": "NatunaIsNatunaBesarKepulauan",
-        "position": "04010815"
-    },
-    {
-        "name": "NatunaSelatanKepulauan",
-        "position": "02451090"
-    },
-    {
-        "name": "Ngabang",
-        "position": "02310955"
-    },
-    {
-        "name": "NgabordamluTanjung",
-        "position": "065613411"
-    },
-    {
-        "name": "Ngawi",
-        "position": "072411126"
-    },
-    {
-        "name": "Nias",
-        "position": "0109730"
-    },
-    {
-        "name": "Nikiniki",
-        "position": "094912430"
-    },
-    {
-        "name": "Nila",
-        "position": "064413831"
-    },
-    {
-        "name": "Niut",
-        "position": "05511006"
-    },
-    {
-        "name": "NorthPagaiIPagaiUtaraPulau",
-        "position": "02351000"
-    },
-    {
-        "name": "Nuboai",
-        "position": "021013630"
-    },
-    {
-        "name": "Numfoor",
-        "position": "01013450"
-    },
-    {
-        "name": "NusaBarung",
-        "position": "083011330"
-    },
-    {
-        "name": "NusaKambangan",
-        "position": "074010810"
-    },
-    {
-        "name": "NusaTenggaraBarat",
-        "position": "085011730"
-    },
-    {
-        "name": "NusaTenggaraTimur",
-        "position": "09301220"
-    },
-    {
-        "name": "Obi",
-        "position": "012312745"
-    },
-    {
-        "name": "Obilatu",
-        "position": "012512720"
-    },
-    {
-        "name": "Okaba",
-        "position": "080613942"
-    },
-    {
-        "name": "Oksibil",
-        "position": "045914035"
-    },
-    {
-        "name": "OmbaiSelat",
-        "position": "083012450"
-    },
-    {
-        "name": "Onang",
-        "position": "030211849"
-    },
-    {
-        "name": "Pacitan",
-        "position": "081211107"
-    },
-    {
-        "name": "PadaidoKepulauan",
-        "position": "011513630"
-    },
-    {
-        "name": "Padang",
-        "position": "01010020"
-    },
-    {
-        "name": "Padangpanjang",
-        "position": "04010020"
-    },
-    {
-        "name": "Padangsidempuan",
-        "position": "01309915"
-    },
-    {
-        "name": "PagaiSelatanPulau",
-        "position": "03010015"
-    },
-    {
-        "name": "Pagatan",
-        "position": "033311559"
-    },
-    {
-        "name": "Painan",
-        "position": "012110034"
-    },
-    {
-        "name": "Palangkaraya",
-        "position": "021611356"
-    },
-    {
-        "name": "Paleleh",
-        "position": "011012150"
-    },
-    {
-        "name": "Palembang",
-        "position": "03010450"
-    },
-    {
-        "name": "Palopo",
-        "position": "03012016"
-    },
-    {
-        "name": "Pamanukan",
-        "position": "061610749"
-    },
-    {
-        "name": "Pampanua",
-        "position": "041612008"
-    },
-    {
-        "name": "Panaitan",
-        "position": "063610512"
-    },
-    {
-        "name": "Pandegelang",
-        "position": "062510605"
-    },
-    {
-        "name": "PangkahTanjung",
-        "position": "065111233"
-    },
-    {
-        "name": "Pangkajene",
-        "position": "044611934"
-    },
-    {
-        "name": "Pangkalanbrandan",
-        "position": "04019820"
-    },
-    {
-        "name": "Pangkalanbuun",
-        "position": "024111137"
-    },
-    {
-        "name": "Pangkalpinang",
-        "position": "0201060"
-    },
-    {
-        "name": "Pantar",
-        "position": "082812410"
-    },
-    {
-        "name": "Parado",
-        "position": "084211830"
-    },
-    {
-        "name": "Pare",
-        "position": "074311212"
-    },
-    {
-        "name": "Parepare",
-        "position": "04011940"
-    },
-    {
-        "name": "Parigi",
-        "position": "0501205"
-    },
-    {
-        "name": "Pasirian",
-        "position": "081311308"
-    },
-    {
-        "name": "Pasirkuning",
-        "position": "03010433"
-    },
-    {
-        "name": "Pasuruan",
-        "position": "074011244"
-    },
-    {
-        "name": "Patani",
-        "position": "02012850"
-    },
-    {
-        "name": "Pati",
-        "position": "064511101"
-    },
-    {
-        "name": "Pekalongan",
-        "position": "065310940"
-    },
-    {
-        "name": "Pekanbaru",
-        "position": "03010115"
-    },
-    {
-        "name": "PelabuhanRatuTeluk",
-        "position": "070510630"
-    },
-    {
-        "name": "Pelabuhanratu",
-        "position": "07010632"
-    },
-    {
-        "name": "Pelaihari",
-        "position": "035511445"
-    },
-    {
-        "name": "Peleng",
-        "position": "012012330"
-    },
-    {
-        "name": "Pemalang",
-        "position": "065310923"
-    },
-    {
-        "name": "Pematangsiantar",
-        "position": "02579905"
-    },
-    {
-        "name": "Pengalengan",
-        "position": "070910730"
-    },
-    {
-        "name": "PenidaNusa",
-        "position": "084511530"
-    },
-    {
-        "name": "Perabumulih",
-        "position": "032710415"
-    },
-    {
-        "name": "Peureulak",
-        "position": "04489745"
-    },
-    {
-        "name": "Pini",
-        "position": "0109840"
-    },
-    {
-        "name": "Pinrang",
-        "position": "034611941"
-    },
-    {
-        "name": "Pirimapun",
-        "position": "062013824"
-    },
-    {
-        "name": "Piru",
-        "position": "030412812"
-    },
-    {
-        "name": "Pising",
-        "position": "050812153"
-    },
-    {
-        "name": "Poh",
-        "position": "04612251"
-    },
-    {
-        "name": "Ponorogo",
-        "position": "075211127"
-    },
-    {
-        "name": "Pontianak",
-        "position": "00310915"
-    },
-    {
-        "name": "Poso",
-        "position": "012012055"
-    },
-    {
-        "name": "Prapat",
-        "position": "02419858"
-    },
-    {
-        "name": "Praya",
-        "position": "083911617"
-    },
-    {
-        "name": "Probolinggo",
-        "position": "074611313"
-    },
-    {
-        "name": "Pulau",
-        "position": "055013815"
-    },
-    {
-        "name": "Purukcahu",
-        "position": "03511435"
-    },
-    {
-        "name": "Purwakarta",
-        "position": "063510729"
-    },
-    {
-        "name": "Purwodadi",
-        "position": "070711055"
-    },
-    {
-        "name": "Purwokerto",
-        "position": "072510914"
-    },
-    {
-        "name": "PuttingTanjung",
-        "position": "033111146"
-    },
-    {
-        "name": "Putussibau",
-        "position": "05011256"
-    },
-    {
-        "name": "Raba",
-        "position": "083611855"
-    },
-    {
-        "name": "Raha",
-        "position": "04551230"
-    },
-    {
-        "name": "Raijua",
-        "position": "103712136"
-    },
-    {
-        "name": "RajaUjung",
-        "position": "03409625"
-    },
-    {
-        "name": "RajaAmpatKepulauan",
-        "position": "0301300"
-    },
-    {
-        "name": "RakataPulau",
-        "position": "061010520"
-    },
-    {
-        "name": "Rambipuji",
-        "position": "081211337"
-    },
-    {
-        "name": "RangkasbitungS",
-        "position": "062110615"
-    },
-    {
-        "name": "Ransiki",
-        "position": "013013410"
-    },
-    {
-        "name": "Rantauprapat",
-        "position": "02159950"
-    },
-    {
-        "name": "Rantemario",
-        "position": "031511957"
-    },
-    {
-        "name": "Rebi",
-        "position": "062313407"
-    },
-    {
-        "name": "Rembang",
-        "position": "064211121"
-    },
-    {
-        "name": "Rengat",
-        "position": "03010245"
-    },
-    {
-        "name": "RiauKepulauan",
-        "position": "03010420"
-    },
-    {
-        "name": "RiauArchRiauKepulauan",
-        "position": "03010420"
-    },
-    {
-        "name": "Rokan",
-        "position": "2010050"
-    },
-    {
-        "name": "Romang",
-        "position": "73012720"
-    },
-    {
-        "name": "Roti",
-        "position": "10501230"
-    },
-    {
-        "name": "Ruteng",
-        "position": "83512030"
-    },
-    {
-        "name": "SabalanaKepulaunan",
-        "position": "64511850"
-    },
-    {
-        "name": "Sabang",
-        "position": "5509515"
-    },
-    {
-        "name": "Sailolof",
-        "position": "11513046"
-    },
-    {
-        "name": "Salatiga",
-        "position": "71911030"
-    },
-    {
-        "name": "Salawati",
-        "position": "1713052"
-    },
-    {
-        "name": "Salayar",
-        "position": "6712030"
-    },
-    {
-        "name": "Samarinda",
-        "position": "0301179"
-    },
-    {
-        "name": "SambarTanjung",
-        "position": "25911019"
-    },
-    {
-        "name": "Sambas",
-        "position": "12010920"
-    },
-    {
-        "name": "Sampang",
-        "position": "71111313"
-    },
-    {
-        "name": "Sampit",
-        "position": "2341130"
-    },
-    {
-        "name": "SampitTeluk",
-        "position": "351133"
-    },
-    {
-        "name": "Sanana",
-        "position": "2412558"
-    },
-    {
-        "name": "Sanana",
-        "position": "2412558"
-    },
-    {
-        "name": "SangiheKepulauan",
-        "position": "3012530"
-    },
-    {
-        "name": "SangihePulau",
-        "position": "33512530"
-    },
-    {
-        "name": "Sangkapura",
-        "position": "55211240"
-    },
-    {
-        "name": "Saonek",
-        "position": "02213055"
-    },
-    {
-        "name": "Saparua",
-        "position": "33312840"
-    },
-    {
-        "name": "SaranGunung",
-        "position": "03011125"
-    },
-    {
-        "name": "Sarmi",
-        "position": "14913844"
-    },
-    {
-        "name": "Sarolangun",
-        "position": "21910242"
-    },
-    {
-        "name": "Satui",
-        "position": "35011527"
-    },
-    {
-        "name": "Saumlaki",
-        "position": "75513120"
-    },
-    {
-        "name": "Sawahlunto",
-        "position": "04010052"
-    },
-    {
-        "name": "SawuSea",
-        "position": "93012150"
-    },
-    {
-        "name": "Sebuku",
-        "position": "33011625"
-    },
-    {
-        "name": "Seget",
-        "position": "124130058"
-    },
-    {
-        "name": "Sekayu",
-        "position": "25110351"
-    },
-    {
-        "name": "Selaru",
-        "position": "891310"
-    },
-    {
-        "name": "SeletanTanjung",
-        "position": "41011440"
-    },
-    {
-        "name": "Selpele",
-        "position": "011305"
-    },
-    {
-        "name": "Selu",
-        "position": "73213055"
-    },
-    {
-        "name": "Semarang",
-        "position": "7011026"
-    },
-    {
-        "name": "Semeru",
-        "position": "8411255"
-    },
-    {
-        "name": "Semuda",
-        "position": "25111258"
-    },
-    {
-        "name": "Sentani",
-        "position": "23614037"
-    },
-    {
-        "name": "Sera",
-        "position": "24110835"
-    },
-    {
-        "name": "Serang",
-        "position": "6810610"
-    },
-    {
-        "name": "SeribuKepulauan",
-        "position": "53610633"
-    },
-    {
-        "name": "Sermata",
-        "position": "81512850"
-    },
-    {
-        "name": "Serui",
-        "position": "6181301"
-    },
-    {
-        "name": "Sesepe",
-        "position": "13012759"
-    },
-    {
-        "name": "Sewer",
-        "position": "55313440"
-    },
-    {
-        "name": "Sigli",
-        "position": "525960"
-    },
-    {
-        "name": "Simeulue",
-        "position": "2459545"
-    },
-    {
-        "name": "Sinabang",
-        "position": "2309624"
-    },
-    {
-        "name": "Singaraja",
-        "position": "871156"
-    },
-    {
-        "name": "singkang",
-        "position": "481201"
-    },
-    {
-        "name": "Singkep",
-        "position": "1010857"
-    },
-    {
-        "name": "Sinjai",
-        "position": "5712020"
-    },
-    {
-        "name": "Sintang",
-        "position": "0511135"
-    },
-    {
-        "name": "Slamet",
-        "position": "7161098"
-    },
-    {
-        "name": "Solor",
-        "position": "8271230"
-    },
-    {
-        "name": "Sopi",
-        "position": "23412828"
-    },
-    {
-        "name": "Sorong",
-        "position": "05513115"
-    },
-    {
-        "name": "Supiori",
-        "position": "101360"
-    },
-    {
-        "name": "Surabaya",
-        "position": "71711245"
-    },
-    {
-        "name": "Tahuna",
-        "position": "33812530"
-    },
-    {
-        "name": "Tambuku",
-        "position": "7811340"
-    },
-    {
-        "name": "Tanahgrogot",
-        "position": "15511615"
-    },
-    {
-        "name": "Tanahmerah",
-        "position": "6514016"
-    },
-    {
-        "name": "TanimbarKepulauan",
-        "position": "73013130"
-    },
-    {
-        "name": "Tanjungpandan",
-        "position": "24310738"
-    },
-    {
-        "name": "Taritatu",
-        "position": "25413827"
-    },
-    {
-        "name": "Tarutung",
-        "position": "209854"
-    },
-    {
-        "name": "Tegal",
-        "position": "6521098"
-    },
-    {
-        "name": "TelukBetungTanjungkarang",
-        "position": "52010510"
-    },
-    {
-        "name": "Tembagapura",
-        "position": "4201370"
-    },
-    {
-        "name": "Teminabuan",
-        "position": "1261321"
-    },
-    {
-        "name": "Tengah",
-        "position": "1301210"
-    },
-    {
-        "name": "Tenggara",
-        "position": "3501220"
-    },
-    {
-        "name": "Tenggarong",
-        "position": "02411658"
-    },
-    {
-        "name": "Tepa",
-        "position": "75212931"
-    },
-    {
-        "name": "Teun",
-        "position": "6591298"
-    },
-    {
-        "name": "Tidore",
-        "position": "04012725"
-    },
-    {
-        "name": "Tifu",
-        "position": "33912624"
-    },
-    {
-        "name": "Tilamuta",
-        "position": "03212223"
-    },
-    {
-        "name": "TobaDanau",
-        "position": "2309730"
-    },
-    {
-        "name": "Tobelo",
-        "position": "14512756"
-    },
-    {
-        "name": "Toboli",
-        "position": "0381205"
-    },
-    {
-        "name": "TogianKepulauan",
-        "position": "02012150"
-    },
-    {
-        "name": "Tojo",
-        "position": "12012115"
-    },
-    {
-        "name": "Tokala",
-        "position": "13012140"
-    },
-    {
-        "name": "Tolitoli",
-        "position": "1512050"
-    },
-    {
-        "name": "ToloTeluk",
-        "position": "22012210"
-    },
-    {
-        "name": "Tondano",
-        "position": "13512454"
-    },
-    {
-        "name": "Trenggalek",
-        "position": "8311143"
-    },
-    {
-        "name": "Tual",
-        "position": "53813244"
-    },
-    {
-        "name": "Tuban",
-        "position": "6541123"
-    },
-    {
-        "name": "UjungPandang",
-        "position": "51011920"
-    },
-    {
-        "name": "Umera",
-        "position": "01212937"
-    },
-    {
-        "name": "VanReesPegunungan",
-        "position": "23513815"
-    },
-    {
-        "name": "Wakre",
-        "position": "0191315"
-    },
-    {
-        "name": "Wamena",
-        "position": "4413857"
-    },
-    {
-        "name": "Wamulan",
-        "position": "3271267"
-    },
-    {
-        "name": "Wangal",
-        "position": "681349"
-    },
-    {
-        "name": "Wangiwangi",
-        "position": "52212337"
-    },
-    {
-        "name": "Wariap",
-        "position": "1301345"
-    },
-    {
-        "name": "Warkopi",
-        "position": "51121349"
-    },
-    {
-        "name": "Warsa",
-        "position": "04713555"
-    },
-    {
-        "name": "Waru",
-        "position": "33013036"
-    },
-    {
-        "name": "Wasian",
-        "position": "14713319"
-    },
-    {
-        "name": "Wasior",
-        "position": "24313430"
-    },
-    {
-        "name": "Watampone",
-        "position": "42912025"
-    },
-    {
-        "name": "Wates",
-        "position": "75111010"
-    },
-    {
-        "name": "SatuataBatuata",
-        "position": "61212242"
-    },
-    {
-        "name": "WatubelaKepulauan",
-        "position": "42813135"
-    },
-    {
-        "name": "We",
-        "position": "5519518"
-    },
-    {
-        "name": "Weda",
-        "position": "021112750"
-    },
-    {
-        "name": "WedaTeluk",
-        "position": "0201280"
-    },
-    {
-        "name": "Wendsi",
-        "position": "23013417"
-    },
-    {
-        "name": "Wenut",
-        "position": "31113319"
-    },
-    {
-        "name": "Weri",
-        "position": "31013238"
-    },
-    {
-        "name": "Wesiri",
-        "position": "73012630"
-    },
-    {
-        "name": "Wetar",
-        "position": "74812630"
-    },
-    {
-        "name": "Wlingi",
-        "position": "8511225"
-    },
-    {
-        "name": "Wokam",
-        "position": "54513428"
-    },
-    {
-        "name": "Wonosari",
-        "position": "75811036"
-    },
-    {
-        "name": "Wonosobo",
-        "position": "72210954"
-    },
-    {
-        "name": "Wosi",
-        "position": "0151280"
-    },
-    {
-        "name": "Wowoni",
-        "position": "451235"
-    },
-    {
-        "name": "Wowoni",
-        "position": "451235"
-    },
-    {
-        "name": "Yamdena",
-        "position": "74513120"
-    },
-    {
-        "name": "Yapen",
-        "position": "15013610"
-    },
-    {
-        "name": "Yogyakarta",
-        "position": "74911022"
-    },
-    {
-        "name": "",
-        "position": ""
-    }
+ {
+  "name": "Aceh",
+  "position": 4159730
+ },
+ {
+  "name": "Adaut",
+  "position": 80813107
+ },
+ {
+  "name": "Adi",
+  "position": 41513330
+ },
+ {
+  "name": "Adonara",
+  "position": 81512305
+ },
+ {
+  "name": "Adua",
+  "position": 14512950
+ },
+ {
+  "name": "Agats",
+  "position": 53313800
+ },
+ {
+  "name": "Aimere",
+  "position": 84512103
+ },
+ {
+  "name": "Akelamo",
+  "position": 13512940
+ },
+ {
+  "name": "Alor",
+  "position": 81512430
+ },
+ {
+  "name": "Alusi",
+  "position": 73513140
+ },
+ {
+  "name": "Amahai",
+  "position": 32012855
+ },
+ {
+  "name": "Ambon",
+  "position": 34312812
+ },
+ {
+  "name": "Ampanan",
+  "position": 83411604
+ },
+ {
+  "name": "Amuntai",
+  "position": 22811525
+ },
+ {
+  "name": "Amurang",
+  "position": 10512440
+ },
+ {
+  "name": "Ansudu",
+  "position": 21113922
+ },
+ {
+  "name": "Arjuna",
+  "position": 74911234
+ },
+ {
+  "name": "Baa",
+  "position": 105012300
+ },
+ {
+  "name": "Babar",
+  "position": 80012930
+ },
+ {
+  "name": "Babo",
+  "position": 23013330
+ },
+ {
+  "name": "Bade",
+  "position": 71013935
+ },
+ {
+  "name": "Baing",
+  "position": 101412034
+ },
+ {
+  "name": "Bali",
+  "position": 82011500
+ },
+ {
+  "name": "Bali",
+  "position": 82011500
+ },
+ {
+  "name": "lat",
+  "position": 54013305
+ },
+ {
+  "name": "Bandung",
+  "position": 65410736
+ },
+ {
+  "name": "Banggai",
+  "position": 13412330
+ },
+ {
+  "name": "Bangko",
+  "position": 20510209
+ },
+ {
+  "name": "Bantul",
+  "position": 75511019
+ },
+ {
+  "name": "Barabai",
+  "position": 23211534
+ },
+ {
+  "name": "Barito",
+  "position": 40011450
+ },
+ {
+  "name": "Batang",
+  "position": 65510945
+ },
+ {
+  "name": "Batanta",
+  "position": 5513040
+ },
+ {
+  "name": "Batuata",
+  "position": 61212242
+ },
+ {
+  "name": "Baubau",
+  "position": 52512238
+ },
+ {
+  "name": "Bawean",
+  "position": 54611235
+ },
+ {
+  "name": "Belawan",
+  "position": 3339832
+ },
+ {
+  "name": "Belinyu",
+  "position": 13510550
+ },
+ {
+  "name": "Benteng",
+  "position": 61012030
+ },
+ {
+  "name": "Beo",
+  "position": 42512650
+ },
+ {
+  "name": "Besar",
+  "position": 24011600
+ },
+ {
+  "name": "Biak",
+  "position": 11013606
+ },
+ {
+  "name": "Biaro",
+  "position": 20512526
+ },
+ {
+  "name": "Bima",
+  "position": 82211849
+ },
+ {
+  "name": "Binjai",
+  "position": 3209830
+ },
+ {
+  "name": "Bintan",
+  "position": 10010400
+ },
+ {
+  "name": "Bintuni",
+  "position": 20713332
+ },
+ {
+  "name": "Bireuen",
+  "position": 5149639
+ },
+ {
+  "name": "Bisa",
+  "position": 11512728
+ },
+ {
+  "name": "Biltar",
+  "position": 80511211
+ },
+ {
+  "name": "Blora",
+  "position": 65711125
+ },
+ {
+  "name": "Bogor",
+  "position": 63610648
+ },
+ {
+  "name": "Bonoi",
+  "position": 14513741
+ },
+ {
+  "name": "Bontang",
+  "position": 1011730
+ },
+ {
+  "name": "Bosnik",
+  "position": 10513610
+ },
+ {
+  "name": "Brebes",
+  "position": 65210903
+ },
+ {
+  "name": "Bula",
+  "position": 30613030
+ },
+ {
+  "name": "Buntok",
+  "position": 14011458
+ },
+ {
+  "name": "Bunyu",
+  "position": 33511750
+ },
+ {
+  "name": "Buol",
+  "position": 11512132
+ },
+ {
+  "name": "Buru",
+  "position": 33012630
+ },
+ {
+  "name": "Buton",
+  "position": 50012245
+ },
+ {
+  "name": "Calang",
+  "position": 4379537
+ },
+ {
+  "name": "Cepu",
+  "position": 70911135
+ },
+ {
+  "name": "Ciamis",
+  "position": 72010821
+ },
+ {
+  "name": "Cilacap",
+  "position": 74310900
+ },
+ {
+  "name": "Cirebon",
+  "position": 64510832
+ },
+ {
+  "name": "Ciremai",
+  "position": 65510827
+ },
+ {
+  "name": "Curup",
+  "position": 42610213
+ },
+ {
+  "name": "Damar",
+  "position": 70712840
+ },
+ {
+  "name": "Dana",
+  "position": 110012252
+ },
+ {
+  "name": "Demak",
+  "position": 65311038
+ },
+ {
+  "name": "Dempo",
+  "position": 40210315
+ },
+ {
+  "name": "Dendang",
+  "position": 30710756
+ },
+ {
+  "name": "Digul",
+  "position": 70713842
+ },
+ {
+  "name": "Dobo",
+  "position": 44461804
+ },
+ {
+  "name": "Doi",
+  "position": 21412749
+ },
+ {
+  "name": "Dumai",
+  "position": 13510128
+ },
+ {
+  "name": "liase",
+  "position": 82113048
+ },
+ {
+  "name": "nde",
+  "position": 84512140
+ },
+ {
+  "name": "nggano",
+  "position": 52010240
+ },
+ {
+  "name": "Fakfak",
+  "position": 25513218
+ },
+ {
+  "name": "Flores",
+  "position": 83512100
+ },
+ {
+  "name": "Fluk",
+  "position": 14212744
+ },
+ {
+  "name": "Galela",
+  "position": 15012749
+ },
+ {
+  "name": "Gani",
+  "position": 4812814
+ },
+ {
+  "name": "Garut",
+  "position": 71410753
+ },
+ {
+  "name": "Gebe",
+  "position": 512925
+ },
+ {
+  "name": "Genteng",
+  "position": 72210624
+ },
+ {
+  "name": "Genyem",
+  "position": 24614012
+ },
+ {
+  "name": "Geser",
+  "position": 35013054
+ },
+ {
+  "name": "Gresik",
+  "position": 71311238
+ },
+ {
+  "name": "Gumzai",
+  "position": 52813442
+ },
+ {
+  "name": "Har",
+  "position": 51613314
+ },
+ {
+  "name": "Hari",
+  "position": 11610405
+ },
+ {
+  "name": "Ibonma",
+  "position": 32913331
+ },
+ {
+  "name": "Ibu",
+  "position": 13512733
+ },
+ {
+  "name": "Idi",
+  "position": 5029737
+ },
+ {
+  "name": "Ilwaki",
+  "position": 75512630
+ },
+ {
+  "name": "Jailolo",
+  "position": 10512730
+ },
+ {
+  "name": "Jakarta",
+  "position": 60910649
+ },
+ {
+  "name": "Jambi",
+  "position": 13810330
+ },
+ {
+  "name": "Jambi",
+  "position": 13010230
+ },
+ {
+  "name": "JavaSea",
+  "position": 43510715
+ },
+ {
+  "name": "Jawa",
+  "position": 70011000
+ },
+ {
+  "name": "Jemaja",
+  "position": 30510545
+ },
+ {
+  "name": "Jember",
+  "position": 81111341
+ },
+ {
+  "name": "Jepara",
+  "position": 360814201
+ },
+ {
+  "name": "Jombang",
+  "position": 73311214
+ },
+ {
+  "name": "Jorong",
+  "position": 35811456
+ },
+ {
+  "name": "Kabaena",
+  "position": 51512200
+ },
+ {
+  "name": "Kahayan",
+  "position": 34011400
+ },
+ {
+  "name": "Kaimana",
+  "position": 33913345
+ },
+ {
+  "name": "Kaironi",
+  "position": 4713340
+ },
+ {
+  "name": "Kalao",
+  "position": 72112100
+ },
+ {
+  "name": "Kampar",
+  "position": 3010308
+ },
+ {
+  "name": "Kapuas",
+  "position": 2510920
+ },
+ {
+  "name": "Karambu",
+  "position": 35311606
+ },
+ {
+  "name": "Karufa",
+  "position": 35013320
+ },
+ {
+  "name": "Kawasi",
+  "position": 13812728
+ },
+ {
+  "name": "Kayan",
+  "position": 25511735
+ },
+ {
+  "name": "Kayeli",
+  "position": 32012710
+ },
+ {
+  "name": "Kayoa",
+  "position": 112728
+ },
+ {
+  "name": "Kebumen",
+  "position": 74210940
+ },
+ {
+  "name": "Kediri",
+  "position": 75111201
+ },
+ {
+  "name": "Kema",
+  "position": 12212508
+ },
+ {
+  "name": "Kendal",
+  "position": 65611014
+ },
+ {
+  "name": "Kendari",
+  "position": 35012230
+ },
+ {
+  "name": "Kepi",
+  "position": 63213919
+ },
+ {
+  "name": "Kerinci",
+  "position": 14010115
+ },
+ {
+  "name": "Kimaam",
+  "position": 75813853
+ },
+ {
+  "name": "Kisar",
+  "position": 80512710
+ },
+ {
+  "name": "Klamono",
+  "position": 10813130
+ },
+ {
+  "name": "Koba",
+  "position": 63713437
+ },
+ {
+  "name": "Kofiau",
+  "position": 11112950
+ },
+ {
+  "name": "Kokas",
+  "position": 24213226
+ },
+ {
+  "name": "Kola",
+  "position": 53513430
+ },
+ {
+  "name": "Kolaka",
+  "position": 40312146
+ },
+ {
+  "name": "Komodo",
+  "position": 83711920
+ },
+ {
+  "name": "Kragan",
+  "position": 64311138
+ },
+ {
+  "name": "Krau",
+  "position": 31914005
+ },
+ {
+  "name": "Kudus",
+  "position": 64811051
+ },
+ {
+  "name": "Kumai",
+  "position": 24411143
+ },
+ {
+  "name": "Kupang",
+  "position": 101912339
+ },
+ {
+  "name": "Kwoka",
+  "position": 3113227
+ },
+ {
+  "name": "Labuha",
+  "position": 3012730
+ },
+ {
+  "name": "Labuhan",
+  "position": 62210550
+ },
+ {
+  "name": "Lahat",
+  "position": 34510330
+ },
+ {
+  "name": "Lahewa",
+  "position": 1229712
+ },
+ {
+  "name": "Lakor",
+  "position": 81512817
+ },
+ {
+  "name": "Lampung",
+  "position": 53010430
+ },
+ {
+  "name": "Langsa",
+  "position": 4309757
+ },
+ {
+  "name": "Larat",
+  "position": 70013200
+ },
+ {
+  "name": "Lariang",
+  "position": 12611917
+ },
+ {
+  "name": "Laut",
+  "position": 44510800
+ },
+ {
+  "name": "Lawele",
+  "position": 51312257
+ },
+ {
+  "name": "Lawu",
+  "position": 74011113
+ },
+ {
+  "name": "Lenmalu",
+  "position": 14513015
+ },
+ {
+  "name": "Letong",
+  "position": 25810542
+ },
+ {
+  "name": "LeuserG",
+  "position": 3469712
+ },
+ {
+  "name": "Lima",
+  "position": 33912758
+ },
+ {
+  "name": "Liman",
+  "position": 74811145
+ },
+ {
+  "name": "Lingga",
+  "position": 1210437
+ },
+ {
+  "name": "Lomblen",
+  "position": 83012332
+ },
+ {
+  "name": "Lombok",
+  "position": 84511630
+ },
+ {
+  "name": "Luwuk",
+  "position": 5612247
+ },
+ {
+  "name": "MadiuM",
+  "position": 73811132
+ },
+ {
+  "name": "Madura",
+  "position": 7301140
+ },
+ {
+  "name": "MahakaM",
+  "position": 3511717
+ },
+ {
+  "name": "Majene",
+  "position": 65010813
+ },
+ {
+  "name": "Makale",
+  "position": 30611951
+ },
+ {
+  "name": "Makian",
+  "position": 2012720
+ },
+ {
+  "name": "Maliku",
+  "position": 3912316
+ },
+ {
+  "name": "Malili",
+  "position": 24212106
+ },
+ {
+  "name": "Mamasa",
+  "position": 25511920
+ },
+ {
+  "name": "Mamuju",
+  "position": 24111850
+ },
+ {
+  "name": "Manado",
+  "position": 12912451
+ },
+ {
+  "name": "Manggar",
+  "position": 25010810
+ },
+ {
+  "name": "Mangole",
+  "position": 15012555
+ },
+ {
+  "name": "Manna",
+  "position": 42510255
+ },
+ {
+  "name": "Manui",
+  "position": 33512305
+ },
+ {
+  "name": "Maratua",
+  "position": 21011835
+ },
+ {
+  "name": "Masamba",
+  "position": 23012015
+ },
+ {
+  "name": "Masela",
+  "position": 80912951
+ },
+ {
+  "name": "Matak",
+  "position": 31810616
+ },
+ {
+  "name": "Mataram",
+  "position": 83511607
+ },
+ {
+  "name": "Mayu",
+  "position": 13012630
+ },
+ {
+  "name": "Mayu",
+  "position": 13012630
+ },
+ {
+  "name": "Medan",
+  "position": 3409838
+ },
+ {
+  "name": "Melolo",
+  "position": 95312040
+ },
+ {
+  "name": "Memboro",
+  "position": 93011930
+ },
+ {
+  "name": "Merak",
+  "position": 61010626
+ },
+ {
+  "name": "Merauke",
+  "position": 82914024
+ },
+ {
+  "name": "Misool",
+  "position": 15213010
+ },
+ {
+  "name": "Molu",
+  "position": 64513140
+ },
+ {
+  "name": "Mondego",
+  "position": 33412209
+ },
+ {
+  "name": "Monse",
+  "position": 40712315
+ },
+ {
+  "name": "Morotai",
+  "position": 21012830
+ },
+ {
+  "name": "Moutong",
+  "position": 2812113
+ },
+ {
+  "name": "Moya",
+  "position": 81011740
+ },
+ {
+  "name": "Muna",
+  "position": 5012230
+ },
+ {
+  "name": "Muntok",
+  "position": 20510510
+ },
+ {
+  "name": "Muria",
+  "position": 63611053
+ },
+ {
+  "name": "Musi",
+  "position": 22010456
+ },
+ {
+  "name": "Muting",
+  "position": 72314020
+ },
+ {
+  "name": "Nabire",
+  "position": 31513526
+ },
+ {
+  "name": "Namber",
+  "position": 10213449
+ },
+ {
+  "name": "Namlea",
+  "position": 31812705
+ },
+ {
+  "name": "Namrole",
+  "position": 34612646
+ },
+ {
+  "name": "Ngabang",
+  "position": 2310955
+ },
+ {
+  "name": "Ngawi",
+  "position": 72411126
+ },
+ {
+  "name": "Nila",
+  "position": 64413831
+ },
+ {
+  "name": "Niut",
+  "position": 5511006
+ },
+ {
+  "name": "Nuboai",
+  "position": 21013630
+ },
+ {
+  "name": "Numfoor",
+  "position": 1013450
+ },
+ {
+  "name": "Obi",
+  "position": 12312745
+ },
+ {
+  "name": "Obilatu",
+  "position": 12512720
+ },
+ {
+  "name": "Okaba",
+  "position": 80613942
+ },
+ {
+  "name": "Oksibil",
+  "position": 45914035
+ },
+ {
+  "name": "Onang",
+  "position": 30211849
+ },
+ {
+  "name": "Pacitan",
+  "position": 81211107
+ },
+ {
+  "name": "Padang",
+  "position": 1010020
+ },
+ {
+  "name": "Pagatan",
+  "position": 33311559
+ },
+ {
+  "name": "Painan",
+  "position": 12110034
+ },
+ {
+  "name": "Paleleh",
+  "position": 11012150
+ },
+ {
+  "name": "Palopo",
+  "position": 3012016
+ },
+ {
+  "name": "Pantar",
+  "position": 82812410
+ },
+ {
+  "name": "Parado",
+  "position": 84211830
+ },
+ {
+  "name": "Pare",
+  "position": 74311212
+ },
+ {
+  "name": "Patani",
+  "position": 2012850
+ },
+ {
+  "name": "Pati",
+  "position": 64511101
+ },
+ {
+  "name": "Peleng",
+  "position": 12012330
+ },
+ {
+  "name": "Pinrang",
+  "position": 34611941
+ },
+ {
+  "name": "Piru",
+  "position": 30412812
+ },
+ {
+  "name": "Pising",
+  "position": 50812153
+ },
+ {
+  "name": "Poh",
+  "position": 4612251
+ },
+ {
+  "name": "Poso",
+  "position": 12012055
+ },
+ {
+  "name": "Prapat",
+  "position": 2419858
+ },
+ {
+  "name": "Praya",
+  "position": 83911617
+ },
+ {
+  "name": "Pulau",
+  "position": 55013815
+ },
+ {
+  "name": "Raba",
+  "position": 83611855
+ },
+ {
+  "name": "Raha",
+  "position": 4551230
+ },
+ {
+  "name": "Raijua",
+  "position": 103712136
+ },
+ {
+  "name": "Ransiki",
+  "position": 13013410
+ },
+ {
+  "name": "Rebi",
+  "position": 62313407
+ },
+ {
+  "name": "Rembang",
+  "position": 64211121
+ },
+ {
+  "name": "Rengat",
+  "position": 3010245
+ },
+ {
+  "name": "Romang",
+  "position": 73012720
+ },
+ {
+  "name": "Roti",
+  "position": 10501230
+ },
+ {
+  "name": "Ruteng",
+  "position": 83512030
+ },
+ {
+  "name": "Sambas",
+  "position": 12010920
+ },
+ {
+  "name": "Sampang",
+  "position": 71111313
+ },
+ {
+  "name": "Saonek",
+  "position": 2213055
+ },
+ {
+  "name": "Saparua",
+  "position": 33312840
+ },
+ {
+  "name": "Sarmi",
+  "position": 14913844
+ },
+ {
+  "name": "Satui",
+  "position": 35011527
+ },
+ {
+  "name": "SawuSea",
+  "position": 93012150
+ },
+ {
+  "name": "Sebuku",
+  "position": 33011625
+ },
+ {
+  "name": "Seget",
+  "position": 124130058
+ },
+ {
+  "name": "Sekayu",
+  "position": 25110351
+ },
+ {
+  "name": "Selu",
+  "position": 73213055
+ },
+ {
+  "name": "Semuda",
+  "position": 25111258
+ },
+ {
+  "name": "Sentani",
+  "position": 23614037
+ },
+ {
+  "name": "Sera",
+  "position": 24110835
+ },
+ {
+  "name": "Sermata",
+  "position": 81512850
+ },
+ {
+  "name": "Sesepe",
+  "position": 13012759
+ },
+ {
+  "name": "Sewer",
+  "position": 55313440
+ },
+ {
+  "name": "Sopi",
+  "position": 23412828
+ },
+ {
+  "name": "Sorong",
+  "position": 5513115
+ },
+ {
+  "name": "Tahuna",
+  "position": 33812530
+ },
+ {
+  "name": "Tepa",
+  "position": 75212931
+ },
+ {
+  "name": "Tidore",
+  "position": 4012725
+ },
+ {
+  "name": "Tifu",
+  "position": 33912624
+ },
+ {
+  "name": "Tobelo",
+  "position": 14512756
+ },
+ {
+  "name": "Tojo",
+  "position": 12012115
+ },
+ {
+  "name": "Tokala",
+  "position": 13012140
+ },
+ {
+  "name": "Tondano",
+  "position": 13512454
+ },
+ {
+  "name": "Tual",
+  "position": 53813244
+ },
+ {
+  "name": "Umera",
+  "position": 1212937
+ },
+ {
+  "name": "Warkopi",
+  "position": 51121349
+ },
+ {
+  "name": "Warsa",
+  "position": 4713555
+ },
+ {
+  "name": "Waru",
+  "position": 33013036
+ },
+ {
+  "name": "Wasian",
+  "position": 14713319
+ },
+ {
+  "name": "Wasior",
+  "position": 24313430
+ },
+ {
+  "name": "Wates",
+  "position": 75111010
+ },
+ {
+  "name": "Weda",
+  "position": 21112750
+ },
+ {
+  "name": "Wendsi",
+  "position": 23013417
+ },
+ {
+  "name": "Wenut",
+  "position": 31113319
+ },
+ {
+  "name": "Weri",
+  "position": 31013238
+ },
+ {
+  "name": "Wesiri",
+  "position": 73012630
+ },
+ {
+  "name": "Wetar",
+  "position": 74812630
+ },
+ {
+  "name": "Wokam",
+  "position": 54513428
+ },
+ {
+  "name": "Yamdena",
+  "position": 74513120
+ },
+ {
+  "name": "Yapen",
+  "position": 15013610
+ }
 ]

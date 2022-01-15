@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap"
 import Node from './Node'
 import '../styles/visualizer.css'
 import Logo from '../assets/binus.png'
@@ -11,7 +12,7 @@ const STARTNODECOL = 3
 const Visualizer = () => {
     // (STATES/REFS/VARIABLES) //
     const Grid = useRef()
-
+    const Title = useRef()
     let nodeGrid = []
     let [nodes, setNodes] = useState([]);
     // let [destination, setDestination] = useState(false);
@@ -364,13 +365,28 @@ const Visualizer = () => {
 
     }, [Grid])
 
+    const scaleUp = () => {
+        gsap.to(Title.current, { scale: 1.2 })
+    }
+
+    const scaleDown = () => {
+        gsap.to(Title.current, { scale: 1.0 })
+    }
+
+    useEffect(() => {
+        gsap.to(Title.current, { scale: 1.2 })
+        setTimeout(() => {
+            gsap.to(Title.current, { scale: 1.0 })
+        }, 500)
+
+    }, [])
 
     let iterator = 0
     // RENDER METHOD
     return (
         <div className="grid" ref={Grid}>
             {/* TITLE */}
-            <h2 className="title"> Djikstra VS A* Visualizer </h2>
+            <h2 className="title" ref={Title} onMouseEnter={scaleUp} onMouseLeave={scaleDown}> Djikstra VS A* Visualizer </h2>
             {/* LOOPING THROUGH THE GRIDS ROWS */}
             {nodes.map((row, idx) => {
                 //MAKING NEW GRID BUT WITH NODES IN IT, ALMOST LIKE A COPY \\ RETURNING ROW DIVS THAT ARE GONNA HOLD OUR NODE CELLS

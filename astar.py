@@ -18,7 +18,7 @@ def heuristic(a, b):
 
 
 def a_star_search(map, startNode, goalNode):
-#used to figure out which node to go next
+    #used to figure out which node to go next
     pq = PriorityQueue()
     #priority starts from 0 (lowest) because we dont want to visit starting node 
     pi:PrioritizedItem = PrioritizedItem(0, startNode)
@@ -27,7 +27,7 @@ def a_star_search(map, startNode, goalNode):
     came_from = {startNode: None}
     cost_so_far = {startNode: 0}
 
-# it will keep looping :0
+    # it will keep looping :0
     while not pq.empty():
         #get = will get first item in the queue
         #item = will return DjikstraVertex object 
@@ -44,10 +44,8 @@ def a_star_search(map, startNode, goalNode):
            
             ''' if the new vertex havent been visited or its cost is less than
             the previous cost it will be updated
-
             since it is looping through the connected edges, it will update the cost with 
             the lowest cost (since there will more than one loop)
-
             '''
 
             if next not in cost_so_far or new_cost < cost_so_far[next]:

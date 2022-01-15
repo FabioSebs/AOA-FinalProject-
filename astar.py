@@ -83,3 +83,14 @@ if __name__ == '__main__':
     print('Cost so far')
     for key, value in cost_so_far.items():
         print(key.data, '->', value)
+
+
+# dataclass is a library from python that generates a class constructor for you and can define a class with the dataclass decorator
+# field is for default variables within the dataclass
+# typing library is for type checking
+# PrioritizedItem is a class with the property of *priority and the *city 
+# Hueristic Function uses AStarGraph.getDistanceFrom() which has a function that takes two nodes and gets absolute distance from each of their weights
+# PrioritizedItem (pi) is what will be put in the PriorityQueue (pq) and be popped until it has reached the GoalNode
+# First we put in the startNode in the PriorityQueue as a PrioritizedItem
+# Then we loop through always getting the next thing in the PQ as the variable current
+# Then we use current as the Key to loop through the nieghbors and add them to cost_so_far if they arent visited 

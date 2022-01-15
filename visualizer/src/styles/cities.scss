@@ -1,0 +1,69 @@
+.countryContainer {
+    position: relative;
+    background-color: #fea47f;
+    margin: 0;
+    height: 100vh;
+    top: -40px;
+    color: #2c3a47;
+    text-align: center;
+    z-index: 2;
+    scroll-snap-align: start;
+
+    .tableContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            position: relative;
+        }
+
+        .cities::-webkit-scrollbar {
+            display: none;
+        }
+        .cities {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #9aecdb;
+            color: #2c3a47;
+            gap: 3px;
+            height: 500px;
+            overflow: scroll;
+            border: 0.05px solid black;
+            box-shadow: 5px 10px 20px black;
+
+            h4 {
+                padding: 0 5px;
+                border: 1px solid #f8efba;
+            }
+        }
+    }
+
+    .webscrapeForm {
+        position: relative;
+        margin-top: 60px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        label {
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        input {
+            padding: 0.7em 1.5em;
+            border-radius: 50px;
+        }
+
+        button {
+            padding: 0.7em 1.5em;
+            border-radius: 50px;
+            border: none;
+            background-color: #3b3b98;
+            color: white;
+        }
+    }
+}

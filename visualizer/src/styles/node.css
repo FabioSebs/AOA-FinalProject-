@@ -35,39 +35,39 @@
 
 @-webkit-keyframes changeColor {
   from {
-    background-color: white;
+    background-color: #fd7272;
     outline: 1px solid black;
   }
   30% {
-    background-color: chartreuse;
+    background-color: #6200ff;
     outline: 3px solid #d82525;
   }
   75% {
-    background-color: red;
+    background-color: rgba(255, 166, 0, 0.904);
     outline: 3px solid #0051ff;
   }
   to {
-    background-color: #00aeff;
-    outline: 3px solid #40ff2e;
+    background-color: #ff00c8;
+    outline: 3px solid #6d0000;
   }
 }
 
 @keyframes changeColor {
   from {
-    background-color: white;
+    background-color: #fd7272;
     outline: 1px solid black;
   }
   30% {
-    background-color: chartreuse;
+    background-color: #6200ff;
     outline: 3px solid #d82525;
   }
   75% {
-    background-color: red;
+    background-color: rgba(255, 166, 0, 0.904);
     outline: 3px solid #0051ff;
   }
   to {
-    background-color: #00aeff;
-    outline: 3px solid #40ff2e;
+    background-color: #ff00c8;
+    outline: 3px solid #6d0000;
   }
 }
 /*# sourceMappingURL=node.css.map */

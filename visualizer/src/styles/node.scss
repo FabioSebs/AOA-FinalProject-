@@ -4,7 +4,7 @@
     outline: 1px solid rgb(0, 0, 0);
     display: inline-block;
     z-index: 3;
-    &:hover{
+    &:hover {
         outline: 2px solid red;
         background-color: rgb(236, 236, 114);
         z-index: 3;
@@ -32,22 +32,22 @@
 
 @keyframes changeColor {
     from {
-        background-color: white;
+        background-color: #fd7272;
         outline: 1px solid rgb(0, 0, 0);
     }
 
     30% {
-        background-color: chartreuse;
+        background-color: rgb(98, 0, 255);
         outline: 3px solid rgb(216, 37, 37);
     }
 
     75% {
-        background-color: rgb(255, 0, 0);
+        background-color: rgba(255, 166, 0, 0.904);
         outline: 3px solid rgb(0, 81, 255);
-     }
+    }
 
     to {
-        background-color: rgb(0, 174, 255);
-        outline: 3px solid rgb(64, 255, 46);
+        background-color: rgb(255, 0, 200);
+        outline: 3px solid rgb(109, 0, 0);
     }
-} 
+}

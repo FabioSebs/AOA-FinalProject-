@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  api:
+    container_name: pythonapi
+    
+    build: ./
+
+    ports:
+      - "4000:4000"
+    
+    networks:
+      - connection
+  
+  map-api:
+    container_name: gomap
+
+    build:
+      context: dataset/
+
+    ports:
+      - "3030:3030"
+
+    networks:
+      - connection
+
+  frontend:
+    container_name: frontendAlgo
+
+    build:
+      context: visualizer/
+
+    ports:
+      - "3000:3000"
+
+    networks:
+      - connection
+  
+networks:
+  connection:
+    driver: bridge

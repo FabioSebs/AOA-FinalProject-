@@ -62,7 +62,7 @@ class Graph():
             Londegrees, Lonminutes = int(position[4:6]), int(position[6:])
 
         except Exception:
-            print("Position needs to be removed with Go \n")
+            print("Calculating Distance \n")
             # Latdegrees, Latminutes = int(position[0:2]), int(position[2:4])
             # Londegrees, Lonminutes = int(position[4:6]), int(position[6:8])
 
@@ -123,7 +123,7 @@ class AStarGraph(Graph):
 
         for i in range(amount+1):
             city = vertex.AStarVertex(
-                data[i]["name"], self.calculateDistance(data[i]["position"]), 0)
+                data[i]["name"], self.calculateDistance(str(data[i]["position"])), 0)
             self.addVertex(city)
 
     def mapify(self, startNode, goalNode):

@@ -48,15 +48,22 @@ func Webscraper(country string) []City {
 	)
 
 	c.OnHTML("table.tableizer-table", func(element *colly.HTMLElement) {
+		//GOQUERY
 		info := element.DOM
+		//REGEX
 		name := regexp.MustCompile(`\W*\d*`)
 		numbers := regexp.MustCompile(`\D*`)
+
+		//DOING GOQUERY TO FIND DOM ELEMENT
 		entry := info.Find("tbody").Find("tr").Find("td").Text()
+
+		//SPLITTING THEM ALL INTO AN ARRAY
 		entries := strings.SplitAfter(entry, "E")
 		// fmt.Println(entries)
 
 		for _, v := range entries {
 			var name_entry string
+			dup := false
 
 			if len(name.ReplaceAllString(v, "${1}")) < 2 {
 				name_entry = name.ReplaceAllString(v, "${1}")
@@ -75,7 +82,16 @@ func Webscraper(country string) []City {
 						Name:     name_entry,
 						Position: position,
 					}
-					cities = append(cities, city)
+
+					for _, val := range cities {
+						if val == city {
+							dup = true
+						}
+					}
+					if !dup {
+						cities = append(cities, city)
+					}
+
 				}
 			}
 

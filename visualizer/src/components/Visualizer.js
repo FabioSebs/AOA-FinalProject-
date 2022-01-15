@@ -87,7 +87,7 @@ const Visualizer = () => {
                 console.log(neighbors[x])
 
                 // GETTING NEIGHBORS OF NEW START
-
+                // CONDITIONAL REPRESENTS THE BOUNDS
                 if (neighbors[x].left > 0 && neighbors[x].up > 0 && neighbors[x].right < 48 && neighbors[x].down < 19) {
                     let right = neighbors[x].right ? grid[neighbors[x].row][neighbors[x].right] : null;
                     let left = neighbors[x].left ? grid[neighbors[x].row][neighbors[x].left] : null;
@@ -111,10 +111,10 @@ const Visualizer = () => {
             // COMBINING NEW NEIGHBORS AND PREVIOUS NEIGHBORS
             nextNodes = neighbors.concat(nextNodes)
 
-            //FILTERING NULL VALUES AND PUTTING INTO UNIQUE NODES
+            //FILTERING NULL VALUES 
             nextNodes = nextNodes.filter(node => node)
 
-            //FILTERING DUPLICATES
+            //FILTERING DUPLICATES AND PUTTING INTO UNIQUE NODES
             nextNodes.forEach(node => {
                 if (!uniqueNodes.includes(node)) {
                     uniqueNodes.push(node)
@@ -279,6 +279,7 @@ const Visualizer = () => {
         }
     }
 
+    // FUNCTIONS FOR GETTING NEIGHBORS
     const getLeft = (col) => {
         return (col-- < 0 ? null : col--)
     }
@@ -299,7 +300,7 @@ const Visualizer = () => {
         return (distance === 0)
     }
 
-
+    ///////////////////////////////////////////////////////////////////////////////////////
 
     // CHANGES CLASS OF GRID TO CHOOSING MODE TO CHOOSE DESTINATION
     const chooseMode = (el) => {
@@ -345,9 +346,10 @@ const Visualizer = () => {
         return ((row * 50) + col)
     }
 
+    //////////////////////////////////////////////////////////////////////////////////////////////
     // RENDERS THE GRID WHEN PAGE IS LAODED 
     useEffect(() => {
-        // function that returns a 3D array with the rows and columns
+        // function that returns a 3D array with the rows and columns - [[],[],[],[],[]...]
         const getGrid = (x, y) => {
             const grid = []
 
@@ -365,6 +367,8 @@ const Visualizer = () => {
 
     }, [Grid])
 
+    ///////////////////////////////////////////////////////////////////////////
+    //ANIMATION FUNCTIONS
     const scaleUp = () => {
         gsap.to(Title.current, { scale: 1.2 })
     }
@@ -381,8 +385,12 @@ const Visualizer = () => {
 
     }, [])
 
+    ///////////////////////////////////////////////////////////////////////
+
     let iterator = 0
-    // RENDER METHOD
+
+
+    // JSX SHOWING THE GRID WITH ALL OF THE NODES
     return (
         <div className="grid" ref={Grid}>
             {/* TITLE */}

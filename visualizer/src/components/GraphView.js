@@ -4,11 +4,13 @@ import "../styles/cities.css"
 
 
 const GraphView = () => {
+    //STATES
     let [map, setMap] = useState([])
     let [country, setCountry] = useState('Indonesia')
     let [initialLoad, setInitialLoad] = useState(true)
     let cities = []
 
+    // HANDLE GET REQUEST TO GOLANG API 
     const getGraph = async () => {
         cities = []
         setMap([])
@@ -26,6 +28,7 @@ const GraphView = () => {
         }
     }
 
+    // HANDLE POST REQUEST TO GOLANG API TO CHANGE CITY
     const changeGraph = async (e) => {
         e.preventDefault();
         cities = []
@@ -45,7 +48,7 @@ const GraphView = () => {
         }
     }
 
-
+    //JSX SHOWS THE CITIES IN THE GIVEN COUNTRY - INDONESIA BY DEFAULT
     return (
         <div className='countryContainer'>
             {initialLoad && getGraph()}

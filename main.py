@@ -34,7 +34,7 @@ class Travel(BaseModel):
 @app.post("/djikstra/")
 async def getDjikstra(nodes: Travel):
     djik = graph.DjikstraGraph()
-    djik.populateGraphDjikstra(250)
+    djik.populateGraphDjikstra(100)
     start, goal = djik.mapify(nodes.start, nodes.goal)
     print(start, goal)
     return (search.DjikstraSearch(djik, start, goal))
@@ -44,7 +44,7 @@ async def getDjikstra(nodes: Travel):
 
 def testDjikstra(startInput, goalInput):
     djik = graph.DjikstraGraph()
-    djik.populateGraphDjikstra(250)
+    djik.populateGraphDjikstra(100)
     start, goal = djik.mapify(startInput, goalInput)
     print(start, goal)
     print(search.DjikstraSearch(djik, start, goal))
@@ -53,7 +53,7 @@ def testDjikstra(startInput, goalInput):
 @app.post("/astar/")
 async def getAStar(nodes: Travel):
     astar = graph.AStarGraph()
-    astar.populateGraphAStar(500)
+    astar.populateGraphAStar(100)
     start, goal = astar.mapify(nodes.start, nodes.goal)
     res = search.AStar(astar, start, goal)
     return res
@@ -61,14 +61,15 @@ async def getAStar(nodes: Travel):
 
 def testAstar(startInput, goalInput):
     astar = graph.AStarGraph()
-    astar.populateGraphAStar(500)
+    astar.populateGraphAStar(100)
     start, goal = astar.mapify(startInput, goalInput)
     res = search.AStar(astar, start, goal)
     print(res)
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=4000, reload=True)
+    testAstar("Adi", "Alor")
+    # uvicorn.run("main:app", host="0.0.0.0", port=4000, reload=True)
     # test1 = graph.AStarGraph()
     # test1.populateGraphAStar(20)
     # test1.printGraph()

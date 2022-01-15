@@ -3,13 +3,17 @@ import axios from 'axios'
 import '../styles/djikstra.css'
 
 const DjikstraView = () => {
+	// SETTING STATES
 	let [startNode, setStart] = useState('')
 	let [goalNode, setGoal] = useState('')
 	let [results, setResults] = useState(false)
+	let [astarResults, setAstarResults] = useState(false)
 	let [cities, setCities] = useState(false)
 	let [citiesAstar, setCitiesAstar] = useState(false)
 	let citiesList = []
+	let astarCities = []
 
+	// HANDLE POST REQUEST TO PYTHON API DJIKSTRA
 	const search = async (e) => {
 		e.preventDefault()
 		try {
@@ -17,20 +21,36 @@ const DjikstraView = () => {
 				start: startNode,
 				goal: goalNode
 			})
-			console.log(response)
-			console.log(response.data)
-			console.log(response.data.visited)
+			// SETTING MY STATES BASED ON THE RESPONSE
 			setResults(response.data.distance)
 			citiesList = response.data.visited
 			setCities(citiesList)
-			console.log(citiesList)
-			console.log("Search Complete!")
+			console.log("Djikstra Search Complete!")
 		}
 		catch (err) {
 			console.log(err)
 		}
 	}
 
+	//HANDLE POST REQUEST TO PYTHON API ASTAR
+	const astar = async (e) => {
+		e.preventDefault()
+		try {
+			const response = await axios.post('http://localhost:4000/astar', {
+				start: startNode,
+				goal: goalNode
+			})
+			// SETTING MY STATES BASED ON RESPONSE
+			setAstarResults(response.data.distance)
+			astarCities = response.data.visited
+			setCitiesAstar(astarCities)
+			console.log("Astar Search Complete!")
+		} catch (error) {
+			console.log(error)
+		}
+	}
+
+	//JSX FORMS FOR DJIKSTRA AND ASTAR
 	return (
 		<div className="finalContainer">
 
@@ -64,12 +84,12 @@ const DjikstraView = () => {
 				<label for="start"> What is your Destination?</label>
 				<input onChange={(e) => { setGoal(e.target.value) }}></input>
 
-				<button className="submitAstar" type="submit" onClick={search}> Astar </button>
+				<button className="submitAstar" type="submit" onClick={astar}> Astar </button>
 				<div className="aStarResults">
-					<h3>{results ? `Distance: ${results} Miles` : undefined}</h3>
-					<h3> {cities ? "Traveled Cities" : null} </h3>
+					<h3>{astarResults ? `Distance: ${astarResults} Miles` : undefined}</h3>
+					<h3> {citiesAstar ? "Traveled Cities" : null} </h3>
 					<ul className="cityList">
-						{citiesAstar ? cities.map(city => <li>{city}</li>) : null}
+						{citiesAstar ? citiesAstar.map(city => <li>{city}</li>) : null}
 					</ul>
 				</div>
 			</form>

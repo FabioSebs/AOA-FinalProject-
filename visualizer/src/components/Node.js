@@ -38,16 +38,21 @@ const Node = ({ type, node, idx }) => {
         }, 200)
     }
 
-    //RENDER METHOD
+    //JSX FOR THE NODE , THE SQUARES ON THE GRID
     return (
         <div className="node" id={idx} ref={nodeDiv} onClick={() => goalNodeChange(nodeDiv)}>
             {/* Using props to change color of nodes */}
 
-            {type === 'start' ? startNodeChange(nodeDiv) : null}
+            {type === 'start' && startNodeChange(nodeDiv)}
             {/* {type === 'visited' ? visitNodeChange(nodeDiv) : null} */}
 
         </div>
     )
 }
+
+// THIS COMPONENT IS WHAT MAKES UP THE GRID THERES OVER 100 OF THESE IN THE GRID
+// FROM THE GRID WE PASS PROPS TO THE NODE IN CASE ITS A START OR GOAL
+// WE HAVE FUNCTIONS IN THIS COMPONENT TO HANDLE THEIR STATE BASED ON THE PROPS PASSED
+// USING REFS AND VANILLA JS TO CHANGE THE CLAS NAME OF THE NODE TO HAVE DIFFERENT STYLES
 
 export default Node
